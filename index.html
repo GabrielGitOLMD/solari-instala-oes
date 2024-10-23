@@ -4,71 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divulgação do Meu Trabalho</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-        }
-        nav ul li {
-            margin: 0 1rem;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 1rem;
-        }
-        nav ul li a:hover {
-            background-color: #555;
-        }
-        main {
-            padding: 2rem;
-            text-align: center;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Solari</h1>
+        <div class="logo">
+            <h1>Meu Trabalho</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="#">Portfólio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </nav>
-    
-    <main>
-        <h2>Bem-vindo</h2>
-        <p>Aqui você encontra informações sobre o meu trabalho e os serviços que ofereço.</p>
-    </main>
-    
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Profissionalismo e Qualidade</h2>
+            <p>Conheça meus serviços e portfólio</p>
+        </div>
+    </section>
+
+    <section class="servicos">
+        <h2>Serviços Oferecidos</h2>
+        <div class="servico-container">
+            <div class="servico-item">
+                <img src="imagens/trabalho1.jpg" alt="Serviço 1">
+                <h3>Instalações Elétricas</h3>
+                <p>Ofereço serviços completos de instalações elétricas para residências e empresas.</p>
+            </div>
+            <div class="servico-item">
+                <img src="imagens/trabalho2.jpg" alt="Serviço 2">
+                <h3>Manutenção</h3>
+                <p>Manutenção preventiva e corretiva para garantir o bom funcionamento do sistema elétrico.</p>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2024 Meu Trabalho. Todos os direitos reservados.</p>
     </footer>
