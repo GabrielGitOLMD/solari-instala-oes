@@ -353,3 +353,20 @@ footer {
 .contato button:hover {
     background-color: #e6b800; /* Cor do botão ao passar o mouse */
 }
+
+
+
+.logo {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.logo img {
+    height: 50px; /* Ajuste a altura conforme necessário */
+    margin-right: 10px; /* Espaçamento entre a logo e o título */
+}
+
+h1 {
+    font-size: 24px; /* Tamanho da fonte do título */
+    color: rgb(255, 255, 255); /* Cor do texto */
+}
