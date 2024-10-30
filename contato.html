@@ -1,17 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Solari Instalações</title>
     <link rel="stylesheet" href="css/style.css">
-
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+    <style>
+        /* Melhorias no estilo e responsividade */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .contato {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        button {
+            background-color: #ffd700;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #e6c200;
+        }
+        
+        /* Exibe detalhes com animação suave */
+        #detalhes-reforma {
+            transition: all 0.3s ease;
+        }
 
+        .hero-text, .servico-item {
+            text-align: center;
+        }
+
+        /* Ajustes de responsividade */
+        @media (max-width: 768px) {
+            .logo, .hero, .hero-text, nav ul {
+                text-align: center;
+            }
+
+            nav ul {
+                padding: 0;
+                list-style: none;
+            }
+
+            .contato {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -35,22 +98,66 @@
             <p>Estamos aqui para ajudar você!</p>
         </div>
     </section>
-
+    
     <section class="contato">
         <h2>Formulário de Contato</h2>
-        <form class="contato-form" action="https://formspree.io/f/mbljlaaq" method="POST">
+        <form action="https://formspree.io/f/movqjgry" method="POST">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
         
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu email">
+        
+            <label for="servico">Serviço:</label>
+            <select id="servico" name="servico" required>
+                <option value="" disabled selected>Selecione um serviço</option>
+                <option value="Reforma Fechada">Reforma Fechada</option>
+                <option value="Manutenção Elétrica">Manutenção Elétrica</option>
+                <option value="Projetos Personalizados">Projetos Personalizados</option>
+                <option value="Instalações Residenciais">Instalações Residenciais</option>
+            </select>
+        
+            <div id="detalhes-reforma" style="display: none;">
+                <h3>Detalhes da Reforma Fechada</h3>
+        
+                <label for="tipo-reforma">Tipo de Reforma:</label>
+                <select id="tipo-reforma" name="tipo-reforma">
+                    <option value="Completa">Completa</option>
+                    <option value="Parcial">Parcial</option>
+                    <option value="Elétrica">Elétrica</option>
+                    <option value="Hidráulica">Hidráulica</option>
+                </select>
+        
+                <label for="ambiente">Ambiente:</label>
+                <select id="ambiente" name="ambiente">
+                    <option value="Residencial">Residencial</option>
+                    <option value="Comercial">Comercial</option>
+                    <option value="Industrial">Industrial</option>
+                </select>
+        
+                <label for="material">Inclusão de Materiais:</label>
+                <select id="material" name="material">
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+            </div>
         
             <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            <textarea id="mensagem" name="mensagem" required placeholder="Detalhe sua necessidade."></textarea>
         
-            <button type="submit">Enviar</button>
+            <button type="submit">Solicitar Serviço</button>
         </form>
         
+        <script>
+            document.getElementById('servico').addEventListener('change', function() {
+                var detalhesReforma = document.getElementById('detalhes-reforma');
+                if (this.value === 'Reforma Fechada') {
+                    detalhesReforma.style.display = 'block';
+                } else {
+                    detalhesReforma.style.display = 'none';
+                }
+            });
+        </script>
     
         <h2>Informações de Contato</h2>
         <p><strong>Telefone:</strong> (61) 8234-7904 </p>
@@ -63,4 +170,5 @@
         <p>&copy; 2024 Solari Instalações. Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>
