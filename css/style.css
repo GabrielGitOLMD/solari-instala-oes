@@ -444,3 +444,25 @@ nav ul li a:hover {
         font-size: 1rem;
     }
 }
+/* Ajuste para a classe .aparennn em telas menores */
+@media (max-width: 768px) {
+    .aparennn {
+        display: flex;
+        flex-direction: column; /* Coloca a imagem e o texto em coluna */
+        align-items: center; /* Centraliza os itens na coluna */
+        padding: 10px;
+        text-align: center;
+    }
+
+    .aparennn img {
+        max-width: 100%; /* Garante que a imagem ocupe a largura completa */
+        margin: 0 auto; /* Centraliza a imagem */
+        margin-bottom: 15px; /* Espaço abaixo da imagem */
+    }
+
+    .aparennn p {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+        line-height: 1.6;
+        margin: 0;
+    }
+}
