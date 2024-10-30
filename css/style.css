@@ -6,27 +6,31 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Faz o body ocupar a altura total da viewport */
+    min-height: 100vh;
 }
 
-header {
+header, footer {
     background-color: black;
     color: white;
     padding: 1rem 2rem;
+    text-align: center;
+}
+
+header {
     display: flex;
-    justify-content: space-between; /* Distribui espaço entre logo e menu */
-    align-items: center; /* Alinha itens verticalmente */
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0; /* Remove margens do menu */
+    margin: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin-left: 20px; /* Espaço entre os itens do menu */
+    margin-left: 20px;
 }
 
 nav ul li a {
@@ -34,9 +38,13 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Seção Hero */
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
 .hero {
-    background-color: #ffffff; /* Amarelo */
+    background-color: #ffffff;
     padding: 4rem 0;
     text-align: center;
 }
@@ -51,462 +59,218 @@ nav ul li a {
     margin-top: 1rem;
 }
 
-/* Seção de Serviços */
-.servicos {
+/* Serviços Section */
+.servicos, .portfolio, .sobre, .contato {
     padding: 2rem;
     text-align: center;
     background-color: #f9f9f9;
 }
 
-.servicos h2 {
+.servicos h2, .portfolio h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 
-.servico-container {
+.servico-container, .portfolio-container {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    flex-wrap: wrap; /* Permite que os itens se movam em telas menores */
+    flex-wrap: wrap;
 }
 
-.servico-item {
+.servico-item, .portfolio-item {
     background-color: white;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
-    transition: transform 0.3s; /* Efeito ao passar o mouse */
+    transition: transform 0.3s;
 }
 
-.servico-item:hover {
-    transform: translateY(-5px); /* Levanta o item ao passar o mouse */
+.servico-item:hover, .portfolio-item:hover {
+    transform: translateY(-5px);
 }
 
-.servico-item img {
+.servico-item img, .portfolio-item img {
     width: 100%;
     border-radius: 8px;
-    margin-bottom: 1rem; /* Espaço entre a imagem e o título */
+    margin-bottom: 1rem;
 }
 
-.servico-item h3 {
+.servico-item h3, .portfolio-info h3 {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
 }
 
-/* Seção Reforma Geral */
-/* Seção Reforma Geral */
+/* Reforma Geral */
 .reforma {
     padding: 3rem;
-    background-color: #f0e68c; /* Amarelo mais suave */
-    color: #333; /* Texto escuro */
+    background-color: #f0e68c;
+    color: #333;
     text-align: center;
-    border-radius: 10px; /* Cantos arredondados */
-    margin: 2rem 0; /* Espaço em cima e embaixo */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra leve */
-    transition: transform 0.3s; /* Transição ao passar o mouse */
+    border-radius: 10px;
+    margin: 2rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    border-top: 3px solid #ffcc00;
 }
 
 .reforma:hover {
-    transform: scale(1.02); /* Aumenta a seção ao passar o mouse */
+    transform: scale(1.02);
 }
 
 .reforma h2 {
-    font-size: 2.8rem; /* Aumenta um pouco o tamanho do título */
+    font-size: 2.8rem;
     margin-bottom: 1rem;
-    font-weight: bold; /* Título em negrito */
+    font-weight: bold;
 }
 
 .reforma p {
-    font-size: 1.4rem; /* Aumenta o tamanho do texto */
-    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+    font-size: 1.4rem;
+    line-height: 1.6;
     margin-top: 1rem;
 }
 
-/* Seção Portfólio */
-.portfolio {
-    padding: 2rem;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
-.portfolio h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.portfolio-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap; /* Permite que os itens se movam em telas menores */
-}
-
-.portfolio-item {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    overflow: hidden; /* Para evitar que o conteúdo ultrapasse o limite */
-    transition: transform 0.3s; /* Efeito ao passar o mouse */
-}
-
-.portfolio-item:hover {
-    transform: translateY(-5px); /* Levanta o item ao passar o mouse */
-}
-
-.portfolio-item img {
-    width: 100%;
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-.portfolio-info {
-    padding: 1rem; /* Espaçamento interno */
-}
-
-.portfolio-info h3 {
-    font-size: 1.8rem;
-    margin: 0.5rem 0;
-}
-
-.portfolio-info p {
-    font-size: 1rem;
-    color: #666; /* Cor do texto mais suave */
-}
-
-/* Seção Sobre */
-.sobre {
-    padding: 2rem;
-    text-align: left; /* Alinhamento à esquerda */
-    background-color: #f9f9f9;
-}
-
-.sobre h2 {
-    font-size: 2rem;
-    margin: 1.5rem 0;
-    color: #333; /* Cor do título */
-}
-
-.sobre p {
-    font-size: 1.1rem;
-    line-height: 1.6; /* Aumenta o espaçamento entre linhas para melhor legibilidade */
-    color: #555; /* Cor do texto mais suave */
-}
-
-.sobre ul {
-    margin: 1rem 0;
-    padding-left: 20px; /* Espaçamento à esquerda */
-}
-
-.sobre li {
-    font-size: 1.1rem; /* Tamanho da fonte dos itens da lista */
-    color: #333; /* Cor do texto dos itens da lista */
-}
-
-/* Seção Contato */
-.contato {
-    padding: 2rem;
-    background-color: #f9f9f9;
-    text-align: center; /* Centraliza o texto */
-}
-
-.contato h2 {
-    font-size: 2rem;
-    margin: 1.5rem 0;
-    color: #333; /* Cor do título */
-}
-
+/* Contato Section */
 .contato-form {
-    max-width: 600px; /* Largura máxima do formulário */
-    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 600px;
+    margin: 0 auto;
     padding: 1.5rem;
-    border: 1px solid #ccc; /* Borda do formulário */
-    border-radius: 10px; /* Cantos arredondados */
-    background-color: #fff; /* Fundo branco para o formulário */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
 }
 
-.contato label {
+.contato label, .sobre li {
     font-size: 1.1rem;
-    display: block;
-    margin: 0.5rem 0; /* Espaçamento superior e inferior */
 }
 
-.contato input,
-.contato textarea {
+.contato input, .contato textarea {
     width: 100%;
     padding: 0.5rem;
-    margin-bottom: 1rem; /* Espaçamento inferior */
+    margin-bottom: 1rem;
     border: 1px solid #ccc;
-    border-radius: 5px; /* Cantos arredondados */
+    border-radius: 5px;
 }
 
 .contato button {
-    background-color: #ffcc00; /* Cor do botão */
-    color: #000; /* Cor do texto do botão */
+    background-color: #ffcc00;
+    color: #000;
     border: none;
     padding: 0.7rem 1.5rem;
     cursor: pointer;
-    border-radius: 5px; /* Cantos arredondados */
+    border-radius: 5px;
 }
 
 .contato button:hover {
-    background-color: #e6b800; /* Cor do botão ao passar o mouse */
+    background-color: #e6b800;
 }
 
 /* Estilo da Logo */
 .logo {
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
+    align-items: center;
 }
 
 .logo img {
-    height: 50px; /* Ajuste a altura conforme necessário */
-    margin-right: 10px; /* Espaçamento entre a logo e o título */
+    height: 50px;
+    margin-right: 10px;
 }
 
 h1 {
-    font-size: 24px; /* Tamanho da fonte do título */
-    color: rgb(255, 255, 255); /* Cor do texto */
+    font-size: 24px;
+    color: #fff;
 }
 
-/* Rodapé */
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: auto; /* Adicionado para empurrar o footer para baixo */
-}
-
-/* Testemunhos */
-.cta-button {
+/* Botões */
+.cta-button, .servico-item .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #f39c12; /* Cor do botão */
-    color: #fff;
-    text-decoration: none;
     border-radius: 5px;
-    margin-top: 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.2s;
+}
+
+.cta-button {
+    background-color: #f39c12;
 }
 
 .servico-item .btn {
-    display: inline-block;
-    padding: 8px 15px;
-    background-color: #2980b9; /* Cor do botão */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+    background-color: #2980b9;
+    margin-top: auto;
 }
 
-.testemunhos {
-    background-color: #ecf0f1;
-    padding: 20px;
-    margin-top: 20px;
+.cta-button:hover, .servico-item .btn:hover {
+    background-color: #e67e22;
 }
 
-/* Seção de Serviços */
-.servico-item {
-    display: flex;
-    flex-direction: column; /* Alinha os itens em coluna */
-    justify-content: space-between; /* Espaça os itens igualmente, empurrando o botão para baixo */
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    transition: transform 0.3s; /* Efeito ao passar o mouse */
-}
-
-/* Ajustes para o botão dentro do item de serviço */
-.servico-item .btn {
-    margin-top: auto; /* Empurra o botão para a parte inferior do item */
-}
-
-
-
-
-
+/* Aparência Geral */
 .aparennn {
-    background: #fff; /* Fundo branco para destacar o conteúdo */
-    padding: 40px; /* Aumenta o espaçamento interno */
-    margin: 20px auto; /* Margem externa para centralizar */
-    max-width: 1000px; /* Aumenta a largura máxima */
-    border: 1px solid #ddd; /* Borda cinza clara */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para destaque */
-    display: flex; /* Usar flexbox para alinhar a imagem e o texto */
-    align-items: center; /* Centraliza verticalmente */
+    background: #fff;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
 }
 
 .aparennn img {
-    max-width: 100%; /* Imagem responsiva */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Bordas arredondadas na imagem */
-    margin-right: 40px; /* Aumenta o espaço entre a imagem e o texto */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 40px;
 }
 
 .aparennn p {
-    flex: 1; /* Permite que o parágrafo ocupe o espaço restante */
-    font-size: 20px; /* Aumenta o tamanho da fonte do texto */
-    line-height: 1.8; /* Melhora a legibilidade do texto */
-    color: #333; /* Cor do texto */
-    margin: 0; /* Remove margem padrão do parágrafo */
+    flex: 1;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #333;
 }
 
-
+/* WhatsApp Logo */
 .whatsapp-logo {
-    position: fixed; /* Fixa a posição em relação à janela do navegador */
-    bottom: 20px; /* Distância do fundo da página */
-    left: 20px; /* Distância da esquerda da página */
-    z-index: 1000; /* Garante que o ícone fique acima de outros elementos */
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
 }
 
 .whatsapp-logo img {
-    width: 50px; /* Ajuste o tamanho conforme necessário */
-    height: auto;
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
 }
-.cta-button:hover, .servico-item .btn:hover {
-    background-color: #e67e22; /* Um tom um pouco mais escuro para o hover */
-    transition: background-color 0.2s;
-}
+
+/* Responsividade */
 @media (max-width: 768px) {
-    .hero h2 {
-        font-size: 2rem;
-    }
-    .hero p {
-        font-size: 1rem;
-        padding: 0 1rem;
-    }
-}
-nav ul li a:hover {
-    color: #ffcc00;
-}
-.reforma {
-    border-top: 3px solid #ffcc00;
-}
-/* Ajuste para a classe .aparennn em telas menores */
-@media (max-width: 768px) {
-    .aparennn {
-        flex-direction: column; /* Coloca a imagem e o texto em coluna */
-        padding: 20px; /* Reduz o espaçamento interno */
-    }
-
-    .aparennn img {
-        margin-right: 0; /* Remove o espaço à direita */
-        margin-bottom: 20px; /* Espaço abaixo da imagem */
-        max-width: 100%; /* Garante que a imagem ocupe a largura completa */
-    }
-
-    .aparennn p {
-        font-size: 18px; /* Reduz o tamanho da fonte para melhor ajuste */
-        line-height: 1.6;
-    }
-}
-
-/* Ajustes gerais de responsividade */
-@media (max-width: 768px) {
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-        padding: 0 1rem;
-    }
-
-    /* Ajuste para a seção de serviços */
-    .servico-container {
-        flex-direction: column; /* Coloca os itens em coluna */
-        align-items: center; /* Centraliza os itens */
-    }
-
-    .servico-item {
-        width: 100%; /* Garante que o item ocupe a largura da tela */
-        max-width: 400px; /* Define uma largura máxima para manter a legibilidade */
-    }
-}
-
-/* Ajuste na seção de contato para telas menores */
-@media (max-width: 768px) {
-    .contato-form {
-        padding: 1rem;
-        width: 90%;
-    }
-
-    .contato label {
-        font-size: 1rem;
-    }
-
-    .contato input,
-    .contato textarea {
-        padding: 0.5rem;
-        font-size: 1rem;
-    }
-}
-/* Ajuste para a classe .aparennn em telas menores */
-@media (max-width: 768px) {
-    .aparennn {
-        display: flex;
-        flex-direction: column; /* Coloca a imagem e o texto em coluna */
-        align-items: center; /* Centraliza os itens na coluna */
-        padding: 10px;
-        text-align: center;
-    }
-
-    .aparennn img {
-        max-width: 100%; /* Garante que a imagem ocupe a largura completa */
-        margin: 0 auto; /* Centraliza a imagem */
-        margin-bottom: 15px; /* Espaço abaixo da imagem */
-    }
-
-    .aparennn p {
-        font-size: 16px; /* Reduz o tamanho da fonte */
-        line-height: 1.6;
-        margin: 0;
-    }
-}
-
-
-
-
-/* testando*/
-
-
-/* Container da seção */
-.section-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-/* Ajuste para telas menores */
-@media (max-width: 768px) {
-    .section-container {
-        flex-direction: column; /* Empilha imagem e texto */
-    }
-    .text-content, .image-content {
-        width: 90%; /* Ajusta largura para ocupar a tela */
-    }
-}
-
-/* Para tamanhos maiores */
-@media (min-width: 769px) {
-    .section-container {
-        flex-direction: row;
+    .hero h2 { font-size: 2rem; }
+    .hero p { font-size: 1rem; padding: 0 1rem; }
+    
+    .servico-container, .portfolio-container, .aparennn {
+        flex-direction: column;
         align-items: center;
     }
-    .text-content {
-        width: 60%; /* Controle de largura do texto */
-        padding: 20px;
+    
+    .servico-item, .portfolio-item {
+        width: 100%;
+        max-width: 400px;
     }
-    .image-content {
-        width: 40%; /* Controle de largura da imagem */
-        padding: 20px;
-    }
+
+    .contato-form { padding: 1rem; width: 90%; }
 }
-.whatsapp-icon {
-    width: 50px; /* Aumente ou diminua conforme necessário */
-    height: 50px;
+/* Centralizar o texto no rodapé */
+footer .footer-text {
+    text-align: center;
+}
+
+/* Centralizar as imagens no rodapé */
+footer .footer-images {
+    display: flex;
+    justify-content: center;
 }
