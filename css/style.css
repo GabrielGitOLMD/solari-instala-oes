@@ -59,26 +59,26 @@ nav ul li a:hover {
     margin-top: 1rem;
 }
 
-/* Serviços Section */
+/* Seções Comuns */
 .servicos, .portfolio, .sobre, .contato {
     padding: 2rem;
     text-align: center;
     background-color: #f9f9f9;
 }
 
-.servicos h2, .portfolio h2 {
+h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 
-.servico-container, .portfolio-container {
+.container {
     display: flex;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
 }
 
-.servico-item, .portfolio-item {
+.item {
     background-color: white;
     padding: 1.5rem;
     border-radius: 8px;
@@ -87,17 +87,17 @@ nav ul li a:hover {
     transition: transform 0.3s;
 }
 
-.servico-item:hover, .portfolio-item:hover {
+.item:hover {
     transform: translateY(-5px);
 }
 
-.servico-item img, .portfolio-item img {
+.item img {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 1rem;
 }
 
-.servico-item h3, .portfolio-info h3 {
+.item h3 {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
 }
@@ -177,13 +177,8 @@ nav ul li a:hover {
     margin-right: 10px;
 }
 
-h1 {
-    font-size: 24px;
-    color: #fff;
-}
-
 /* Botões */
-.cta-button, .servico-item .btn {
+.cta-button, .item .btn {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 5px;
@@ -196,12 +191,12 @@ h1 {
     background-color: #f39c12;
 }
 
-.servico-item .btn {
+.item .btn {
     background-color: #2980b9;
     margin-top: auto;
 }
 
-.cta-button:hover, .servico-item .btn:hover {
+.cta-button:hover, .item .btn:hover {
     background-color: #e67e22;
 }
 
@@ -213,64 +208,109 @@ h1 {
     max-width: 1000px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.aparennn img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-right: 40px;
-}
-
-.aparennn p {
-    flex: 1;
-    font-size: 20px;
-    line-height: 1.8;
-    color: #333;
-}
-
-/* WhatsApp Logo */
 .whatsapp-logo {
     position: fixed;
     bottom: 20px;
-    left: 20px;
-    z-index: 1000;
+    right: 20px;
 }
 
 .whatsapp-logo img {
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    cursor: pointer;
+    width: 60px;
+    height: 60px;
 }
 
-/* Responsividade */
+/* Rodapé */
+footer {
+    margin-top: auto;
+}
+
+/* Media Queries para Responsividade */
 @media (max-width: 768px) {
-    .hero h2 { font-size: 2rem; }
-    .hero p { font-size: 1rem; padding: 0 1rem; }
-    
-    .servico-container, .portfolio-container, .aparennn {
+    .container {
         flex-direction: column;
         align-items: center;
     }
-    
-    .servico-item, .portfolio-item {
+
+    .item {
         width: 100%;
-        max-width: 400px;
+        max-width: 300px;
     }
-
-    .contato-form { padding: 1rem; width: 90%; }
 }
-/* Centralizar o texto no rodapé */
-footer .footer-text {
-    text-align: center;
+.whatsapp-logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Cor de fundo verde do WhatsApp */
+    border-radius: 50%; /* Torna o fundo redondo */
+    padding: 5px; /* Espaçamento interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para destacar o ícone */
+    transition: transform 0.2s; /* Transição suave para efeito de hover */
 }
 
-/* Centralizar as imagens no rodapé */
-footer .footer-images {
+.whatsapp-logo:hover {
+    transform: scale(1.1); /* Aumenta o ícone levemente ao passar o mouse */
+}
+
+.whatsapp-logo img {
+    width: 60px; /* Tamanho do ícone */
+    height: 60px; /* Tamanho do ícone */
+    border-radius: 50%; /* Garante que o próprio ícone também seja redondo */
+}
+.carrossel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 900px; /* Ajuste a altura conforme necessário */
+}
+
+.carrossel-container {
     display: flex;
-    justify-content: center;
+    transition: transform 0.5s ease;
+}
+
+.carrossel-slide {
+    min-width: 100%; /* Cada slide ocupa 100% da largura */
+    position: relative;
+}
+
+.carrossel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Preenche o espaço do slide */
+}
+
+.carrossel-overlay {
+    position: absolute; /* Para que o conteúdo do overlay fique sobreposto à imagem */
+    top: 50%; /* Centraliza verticalmente */
+    left: 20px; /* Adiciona espaço à esquerda */
+    transform: translateY(-50%); /* Ajusta a posição para centralizar verticalmente */
+    padding: 20px; /* Adiciona espaço ao redor do texto */
+    color: white; /* Cor do texto no overlay */
+    text-align: left; /* Alinha o texto à esquerda */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para melhor legibilidade */
+    border-radius: 5px; /* Arredondamento opcional para o fundo */
+}
+
+.carrossel-overlay h3 {
+    margin: 0; /* Remove a margem padrão */
+    font-size: 24px; /* Tamanho da fonte do título */
+    line-height: 1.2; /* Espaçamento entre linhas para melhor legibilidade */
+}
+
+.carrossel-overlay .btn {
+    display: inline-block; /* Garante que o botão seja tratado como um bloco */
+    margin-top: 10px; /* Espaçamento entre o título e o botão */
+    padding: 10px 20px; /* Tamanho do botão */
+    background-color: #FFD700; /* Cor de fundo do botão */
+    color: black; /* Cor do texto no botão */
+    text-decoration: none; /* Remove sublinhado do link */
+    border-radius: 5px; /* Arredonda as bordas do botão */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.carrossel-overlay .btn:hover {
+    background-color: #FFC107; /* Cor do botão ao passar o mouse */
 }
