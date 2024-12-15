@@ -11,13 +11,14 @@ body {
 
 header, footer {
     background-color: black;
+    size: 100%;
     color: white;
     padding: 1rem 2rem;
     text-align: center;
 }
 
 header {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
