@@ -45,7 +45,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     background-color: #ffffff;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     text-align: center;
 }
 
@@ -61,7 +61,7 @@ nav ul li a:hover {
 
 /* Seções Comuns */
 .servicos, .portfolio, .sobre, .contato {
-    padding: 2rem;
+    padding: 0.5rem;
     text-align: center;
     background-color: #f9f9f9;
 }
