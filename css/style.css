@@ -11,9 +11,9 @@ body {
 
 header, footer {
     background-color: black;
-    size: 100%;
+    
     color: white;
-    padding: 1rem 2rem;
+    padding: 0rem 0rem;
     text-align: center;
 }
 
