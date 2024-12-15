@@ -12,22 +12,15 @@ body {
 header, footer {
     background-color: black;
     color: white;
-    padding: 0rem 5rem;
+    padding: 1rem 2rem;
     text-align: center;
-   
 }
 
 header {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #000000;
-    color: white;
-   
 }
-
 
 nav ul {
     list-style: none;
@@ -37,66 +30,22 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 10px;
-   
-    
-    
-    
+    margin-left: 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
-    transition: background 0.3s;
 }
 
 nav ul li a:hover {
     color: #ffcc00;
 }
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    nav ul {
-        display: none; /* Menu escondido por padrão */
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        z-index: 1000;
-    }
-
-    nav ul.active {
-        display: flex; /* Exibir menu ao ativar */
-    }
-
-    nav ul li {
-        margin: 0;
-        text-align: center;
-    }
-
-    nav ul li a {
-        padding: 15px;
-        width: 100%;
-        display: block;
-    }
-
-    .menu-toggle {
-        display: block;
-        background-color: #333;
-        color: white;
-        border: none;
-        font-size: 24px;
-        cursor: pointer;
-        margin-left: auto;
-    }
-}
 
 /* Hero Section */
 .hero {
-    background-color: #ffffff;
-    padding: 0.5rem 0;
+    background-color: #f9f9f9;
+    padding: 1rem 0;
     text-align: center;
 }
 
@@ -112,7 +61,7 @@ nav ul li a:hover {
 
 /* Seções Comuns */
 .servicos, .portfolio, .sobre, .contato {
-    padding: 0.5rem;
+    padding: 2rem;
     text-align: center;
     background-color: #f9f9f9;
 }
@@ -143,8 +92,7 @@ h2 {
 }
 
 .item img {
-    width: 250px;
-    height: 250px;
+    width: 100%;
     border-radius: 8px;
     margin-bottom: 1rem;
 }
@@ -315,7 +263,7 @@ footer {
     position: relative;
     overflow: hidden;
     width: 100%;
-   
+     /* Ajuste a altura conforme necessário */
 }
 
 .carrossel-container {
@@ -342,7 +290,7 @@ footer {
     padding: 20px; /* Adiciona espaço ao redor do texto */
     color: white; /* Cor do texto no overlay */
     text-align: left; /* Alinha o texto à esquerda */
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor legibilidade */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para melhor legibilidade */
     border-radius: 5px; /* Arredondamento opcional para o fundo */
 }
 
@@ -366,4 +314,3 @@ footer {
 .carrossel-overlay .btn:hover {
     background-color: #FFC107; /* Cor do botão ao passar o mouse */
 }
-
