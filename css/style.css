@@ -263,7 +263,7 @@ footer {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 900px; /* Ajuste a altura conforme necessário */
+   
 }
 
 .carrossel-container {
@@ -290,7 +290,7 @@ footer {
     padding: 20px; /* Adiciona espaço ao redor do texto */
     color: white; /* Cor do texto no overlay */
     text-align: left; /* Alinha o texto à esquerda */
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para melhor legibilidade */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor legibilidade */
     border-radius: 5px; /* Arredondamento opcional para o fundo */
 }
 
