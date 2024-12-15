@@ -92,7 +92,8 @@ h2 {
 }
 
 .item img {
-    width: 100%;
+    width: 250px;
+    height: 250px;
     border-radius: 8px;
     margin-bottom: 1rem;
 }
@@ -314,3 +315,4 @@ footer {
 .carrossel-overlay .btn:hover {
     background-color: #FFC107; /* Cor do botão ao passar o mouse */
 }
+
