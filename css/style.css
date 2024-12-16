@@ -205,11 +205,14 @@ h2 {
 .logo {
     display: flex;
     align-items: center;
+    
 }
 
 .logo img {
     height: 50px;
     margin-right: 10px;
+    box-shadow: 5px 5px 10px #2e281a27;
+    border-radius: 300px;
 }
 
 /* Botões */
@@ -283,11 +286,14 @@ footer {
     padding: 5px; /* Espaçamento interno */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para destacar o ícone */
     transition: transform 0.2s; /* Transição suave para efeito de hover */
+    box-shadow: 5px 5px 10px #0f5729b6;
 }
 
 .whatsapp-logo:hover {
     transform: scale(1.1); /* Aumenta o ícone levemente ao passar o mouse */
 }
+
+
 
 .whatsapp-logo img {
     width: 60px; /* Tamanho do ícone */
