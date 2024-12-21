@@ -1,29 +1,90 @@
 /* Estilos Gerais */
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
+   
+   background-image: linear-gradient(to left,#73654c,#a68c5d);
+   height: 100%;
+   width: auto;
+   border: 0px;
+   padding: 0px;
+   margin: 0;
+   outline: 0px; 
+    
+     
+}
+
+
+main{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-header, footer {
-    background-color: black;
-    color: white;
-    padding: 1rem 2rem;
-    text-align: center;
+    flex: 1;
 }
 
 header {
+    
+    background-color: rgb(0, 0, 0);
+    color: #a68c5d;
+    width: 100%;
+    height: 20%;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    outline: 0px;
+    text-align: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    align-items: center;   
     
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    
 }
+@media (max-width: 768px) {
+ 
+    header {
+        flex-direction: column;
+        align-items: flex-start;       
+        
+    }  
+
+    nav ul li {
+        text-align: center;
+        margin: 5px 0;
+        display: block;
+        flex-direction: column;
+        
+    }
+
+   
+}
+footer {
+    
+
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;
+    height: 5%;
+    width: 100%;    
+    border: 0px;    
+    padding: 1px;
+    margin: 0;
+    outline: 0px;
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    
+
+}
+.footer-text{
+ 
+   
+    
+}
+
+
 header .logo {
     display: flex;
     align-items: center;
@@ -31,57 +92,38 @@ header .logo {
 header .logo img {
     max-height: 50px;
     margin-right: 10px;
+    border-radius: 50px;
 }
 nav ul {
     display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    list-style: none; 
     
+       
 }
 
-nav ul li {
-    margin: 0 10px;
-}
 
 nav ul li a {
     text-decoration: none;
-    color: white;
-    font-weight: initial;
-    padding: 5px 10px;
+  
+    color: #ffffff;
+    text-shadow: 5px 5px 15px #4b41317a;
+    
+    margin: 5px;
+    
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    color: #73654c;
 }
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    nav ul li {
-        text-align: center;
-        margin: 5px 0;
-    }
-
-    nav ul li a {
-        display: block;
-        width: 100%;
-    }
-}
 
 
 /* Hero Section */
 .hero {
-    background-color: #f9f9f9;
+    
     padding: 1rem 0;
     text-align: center;
+    color: #000000;
 }
 
 .hero h2 {
@@ -167,18 +209,8 @@ h2 {
 }
 
 /* Contato Section */
-.contato-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 1.5rem;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #fff;
-}
 
-.contato label, .sobre li {
-    font-size: 1.1rem;
-}
+
 
 .contato input, .contato textarea {
     width: 100%;
@@ -189,31 +221,20 @@ h2 {
 }
 
 .contato button {
-    background-color: #ffcc00;
-    color: #000;
+    
+    color: #ffffff;
     border: none;
     padding: 0.7rem 1.5rem;
     cursor: pointer;
     border-radius: 5px;
 }
 
-.contato button:hover {
-    background-color: #e6b800;
-}
+
 
 /* Estilo da Logo */
-.logo {
-    display: flex;
-    align-items: center;
-    
-}
 
-.logo img {
-    height: 50px;
-    margin-right: 10px;
-    box-shadow: 5px 5px 10px #2e281a27;
-    border-radius: 300px;
-}
+
+
 
 /* Botões */
 .cta-button, .item .btn {
@@ -221,7 +242,7 @@ h2 {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     transition: background-color 0.2s;
 }
 
@@ -230,86 +251,70 @@ h2 {
 }
 
 .item .btn {
-    background-color: #2980b9;
+    background-color: #0d0926;
     margin-top: auto;
 }
 
 .cta-button:hover, .item .btn:hover {
-    background-color: #e67e22;
+    background-color: #73654c;
 }
 
-/* Aparência Geral */
-.aparennn {
-    background: #fff;
-    padding: 40px;
-    margin: 20px auto;
-    max-width: 1000px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
 
-.whatsapp-logo {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
-
-.whatsapp-logo img {
-    width: 60px;
-    height: 60px;
-}
-
-/* Rodapé */
-footer {
-    margin-top: auto;
-}
 
 /* Media Queries para Responsividade */
 
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .item {
-        width: 100%;
-        max-width: 300px;
-    }
+
+ 
 
 .whatsapp-logo {
-    position: fixed;
-    bottom: 20px;
+    position: fixed ;
+    bottom: 10px;
     right: 20px;
-    background-color: #25D366; /* Cor de fundo verde do WhatsApp */
-    border-radius: 50%; /* Torna o fundo redondo */
-    padding: 5px; /* Espaçamento interno */
+    margin: 0;
+    
+    padding: 0px; /* Espaçamento interno */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para destacar o ícone */
     transition: transform 0.2s; /* Transição suave para efeito de hover */
-    box-shadow: 5px 5px 10px #0f5729b6;
+    z-index: 2;
+   
+    
 }
 
 .whatsapp-logo:hover {
+
     transform: scale(1.1); /* Aumenta o ícone levemente ao passar o mouse */
+    
 }
 
 
 
 .whatsapp-logo img {
-    width: 60px; /* Tamanho do ícone */
-    height: 60px; /* Tamanho do ícone */
-    border-radius: 50%; /* Garante que o próprio ícone também seja redondo */
+    border-radius: 0.6em;
+    padding: 0px;
+      
+    
+}
+a.link-Whats{
+
+ 
+    padding: 50px;
+    margin: -104px;
+    
+    
+    
 }
 .carrossel {
     position: relative;
     overflow: hidden;
     width: 100%;
+    
      /* Ajuste a altura conforme necessário */
 }
 
 .carrossel-container {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.9s ease;
 }
 
 .carrossel-slide {
@@ -345,13 +350,13 @@ footer {
     display: inline-block; /* Garante que o botão seja tratado como um bloco */
     margin-top: 10px; /* Espaçamento entre o título e o botão */
     padding: 10px 20px; /* Tamanho do botão */
-    background-color: #FFD700; /* Cor de fundo do botão */
-    color: black; /* Cor do texto no botão */
+    background-color: #0d0926; /* Cor de fundo do botão */
+    color: rgba(255, 255, 255, 0.774); /* Cor do texto no botão */
     text-decoration: none; /* Remove sublinhado do link */
     border-radius: 5px; /* Arredonda as bordas do botão */
     transition: background-color 0.3s; /* Transição suave para a cor de fundo */
 }
 
 .carrossel-overlay .btn:hover {
-    background-color: #FFC107; /* Cor do botão ao passar o mouse */
+    background-color: #73654c; /* Cor do botão ao passar o mouse */
 }
