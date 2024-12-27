@@ -10,199 +10,116 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
-    <style>
-        /* Melhorias no estilo e responsividade */
-      
-        
-        .contato {
-            max-width: 600px;
 
-            margin: 20px auto 20px auto;
-            padding: 5px 20px 5px 20px;
 
-            border-radius: 10px;
-        }
-        
-        label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-        
-        input, select, textarea, button {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        
-        button {
-            background-color: #0d0926;
-            color: black;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        
-        button:hover {
-            background-color: #73654c;
-        }
-        
-        /* Exibe detalhes com animação suave */
-        #detalhes-reforma {
-            transition: all 0.3s ease;
-        }
- 
-
-        .hero{
-           
-            border: 0px;
-            padding: 0px;
-            margin: 30px;
-            display: flexbox;
-            max-width: 600px;
-            margin: 20px auto 20px auto;
-            color: #ffffff;
-            
-        }
-        .hero-text, .servico-item  {
-            text-align: center;
-            
-        }
-
-        /* Ajustes de responsividade */
-        @media (max-width: 768px) {
-            .logo, .hero, .hero-text, nav ul {
-                text-align: center;
-            }
-
-            nav ul {
-                padding: 0;
-                list-style: none;
-            }
-
-            .contato {
-                padding: 10px;
-            }
-        }
-      
-       form {
-         max-width: 600px; margin: 0 auto; padding: 2rem; border: 1px solid #ccc; border-radius: 8px;
-       }
-       footer{
-        
-        position: relative;
-        bottom: 0px;
-        
-       }
-       
-    </style>
 </head>
 
 <body>
-    <main>
+
     <header>
         <div class="logo">
             <img src="imagens/logo.png" alt="Logo da Solari" />
             <h1>Solari Instalações</h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
     </header>
+    <nav>
 
-    <section class="hero">
-       
+        <a href="index.html">Início</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+
+    </nav>
+
+    <main>
+        <section class="hero">
             <h2>Entre em Contato Conosco</h2>
-            <p>Estamos aqui para ajudar você!</p>
-        
-    </section>
-    
-    <section class=" contato">
-        <h2>Formulário de Contato</h2>
-        <form action="https://formspree.io/f/movqjgry" method="POST">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
-        
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Digite seu email">
-        
-            <label for="servico">Serviço:</label>
-            <select id="servico" name="servico" required>
-                <option value="" disabled selected>Selecione um serviço</option>
-                <option value="Reforma Fechada">Reforma Geral</option>
-                <option value="Manutenção Elétrica">Manutenção Elétrica</option>
-                <option value="Projetos Personalizados">Projetos Personalizados</option>
-                <option value="Instalações Residenciais">Instalações Residenciais</option>
-            </select>
-        
-            <div id="detalhes-reforma" style="display: none;">
-                <h3>Detalhes da Reforma Geral</h3>
-        
-                <label for="tipo-reforma">Tipo de Reforma:</label>
-                <select id="tipo-reforma" name="tipo-reforma">
-                    <option value="Completa">Completa</option>
-                    <option value="Parcial">Parcial</option>
-                    <option value="Elétrica">Elétrica</option>
-                    <option value="Hidráulica">Hidráulica</option>
+            <p class="ajuda"><strong>Estamos aqui para ajudar você!</strong></p>
+
+        </section>
+
+        <section class="contato">
+            <h2>Formulário de Contato</h2>
+            <form action="https://formspree.io/f/movqjgry" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu email">
+
+                <label for="servico">Serviço:</label>
+                <select id="servico" name="servico" required>
+                    <option value="" disabled selected>Selecione um serviço</option>
+                    <option value="Reforma Fechada">Reforma Geral</option>
+                    <option value="Manutenção Elétrica">Manutenção Elétrica</option>
+                    <option value="Projetos Personalizados">Projetos Personalizados</option>
+                    <option value="Instalações Residenciais">Instalações Residenciais</option>
                 </select>
-        
-                <label for="ambiente">Ambiente:</label>
-                <select id="ambiente" name="ambiente">
-                    <option value="Residencial">Residencial</option>
-                    <option value="Comercial">Comercial</option>
-                    <option value="Industrial">Industrial</option>
-                </select>
-        
-                <label for="material">Inclusão de Materiais:</label>
-                <select id="material" name="material">
-                    <option value="Sim">Sim</option>
-                    <option value="Não">Não</option>
-                </select>
+
+                <div id="detalhes-reforma" style="display: none;">
+                    <h3>Detalhes da Reforma Geral</h3>
+
+                    <label for="tipo-reforma">Tipo de Reforma:</label>
+                    <select id="tipo-reforma" name="tipo-reforma">
+                        <option value="Completa">Completa</option>
+                        <option value="Parcial">Parcial</option>
+                        <option value="Elétrica">Elétrica</option>
+                        <option value="Hidráulica">Hidráulica</option>
+                    </select>
+
+                    <label for="ambiente">Ambiente:</label>
+                    <select id="ambiente" name="ambiente">
+                        <option value="Residencial">Residencial</option>
+                        <option value="Comercial">Comercial</option>
+                        <option value="Industrial">Industrial</option>
+                    </select>
+
+                    <label for="material">Inclusão de Materiais:</label>
+                    <select id="material" name="material">
+                        <option value="Sim">Sim</option>
+                        <option value="Não">Não</option>
+                    </select>
+                </div>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required placeholder="Detalhe sua necessidade."></textarea>
+
+                <button type="submit">Solicitar Serviço</button>
+            </form>
+
+            <script>
+                document.getElementById('servico').addEventListener('change', function () {
+                    var detalhesReforma = document.getElementById('detalhes-reforma');
+                    if (this.value === 'Reforma Fechada') {
+                        detalhesReforma.style.display = 'block';
+                    } else {
+                        detalhesReforma.style.display = 'none';
+                    }
+                });
+            </script>
+            <div class="InfoContato">
+                <h2>Informações de Contato</h2>
+                <p><strong>Telefone:</strong> (61) 8234-7904 </p>
+                <p><strong>Email:</strong> Solariinstalacoes19@gmail.com</p>
+                <p><strong>Endereço:</strong> Avenida araucárias, Águas claras CEP 12345-678</p>
             </div>
-        
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required placeholder="Detalhe sua necessidade."></textarea>
-        
-            <button type="submit">Solicitar Serviço</button>
-        </form>
-        
-        <script>
-            document.getElementById('servico').addEventListener('change', function() {
-                var detalhesReforma = document.getElementById('detalhes-reforma');
-                if (this.value === 'Reforma Fechada') {
-                    detalhesReforma.style.display = 'block';
-                } else {
-                    detalhesReforma.style.display = 'none';
-                }
-            });
-        </script>
-    
-        <h2>Informações de Contato</h2>
-        <p><strong>Telefone:</strong> (61) 8234-7904 </p>
-        <p><strong>Email:</strong> Solariinstalacoes19@gmail.com</p>
-        <p><strong>Endereço:</strong> Avenida araucárias, Águas claras CEP 12345-678</p>
-    </section>
+        </section>
 
-    
-    
-    
+    </main>
 
-  
+
+
+
     <div class="whatsapp-logo">
         <a href="https://wa.me/5531999999999" target="_blank">
             <img src="imagens/novaLogo.png" alt="WhatsApp">
         </a>
     </div>
-</main>
-<footer>
-    <p>&copy; 2024 Solari Instalações. Todos os direitos reservados.</p>
-</footer>
+
+    <footer>
+        <p>&copy; 2024 Solari Instalações. Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>

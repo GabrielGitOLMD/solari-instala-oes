@@ -167,11 +167,15 @@ main p{
 }
 /* Hero Section */
 .hero {
+    
 
    
     padding: 1rem 0;
     text-align: center;
     color: #000000;
+}
+.hero .ajuda{
+   text-align: center;
 }
 
 .hero h2 {
@@ -254,7 +258,9 @@ div.item.servico-item{
 }
 
 /* Contato Section */
-
+.contato h2{
+    text-align: center;
+}
 
 .contato input, .contato textarea {
     width: 100%;
@@ -292,14 +298,6 @@ div.item.servico-item{
 .cta-button:hover, .item .btn:hover {
     background-color: #73654c;
 }
-
-
-
-
-
-
-
- 
 
 .whatsapp-logo {
     height: 45px;
@@ -359,4 +357,77 @@ footer{
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
+}
+
+
+/* contato */
+
+.contato {
+    max-width: 600px;
+
+    margin: 20px auto 20px auto;
+    padding: 5px 20px 5px 20px;
+
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #0d0926;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #73654c;
+}
+
+/* Exibe detalhes com animação suave */
+#detalhes-reforma {
+    transition: all 0.3s ease;
+}
+
+
+
+.hero-text,
+.servico-item {
+    text-align: center;
+
+}
+
+
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.InfoContato h2{
+    margin-top: 20px;
+
+    text-align: center;
+  
+}
+.InfoContato p{
+    margin: 0px;
 }
