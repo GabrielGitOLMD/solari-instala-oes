@@ -48,7 +48,7 @@ header .logo {
 
 header .logo img {
     float: left;
-    max-height: 50px;
+    
     margin-right: 10px;
     border-radius: 10px;
 }
@@ -57,10 +57,8 @@ nav {
    background-color: var(--cor5);
    padding: 10px;
    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.342);     
-   
-   
-   
-  
+     
+    
            
 }
 
@@ -136,16 +134,27 @@ main p{
 .carrossel-overlay {
     position: absolute; /* Para que o conteúdo do overlay fique sobreposto à imagem */
     top: 50%; /* Centraliza verticalmente */
-    left: 20px; /* Adiciona espaço à esquerda */
+    left: 5px; /* Adiciona espaço à esquerda */
     transform: translateY(-50%); /* Ajusta a posição para centralizar verticalmente */
-    padding: 20px; /* Adiciona espaço ao redor do texto */
+    padding: 5px; /* Adiciona espaço ao redor do texto */
     color: white; /* Cor do texto no overlay */
     text-align: left; /* Alinha o texto à esquerda */
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para melhor legibilidade */
+    background-color: rgba(0, 0, 0, 0.7);
+   
+    
+    
+     /* Fundo semi-transparente para melhor legibilidade */
     border-radius: 5px; /* Arredondamento opcional para o fundo */
 }
 
+    .carrossel-overlay a{
+        padding: 0;
+        margin-top: 0px;
+    }
+
 .carrossel-overlay h3 {
+    font-weight: 100;
+    margin-bottom: 0px;
     margin: 0; /* Remove a margem padrão */
     font-size: 24px; /* Tamanho da fonte do título */
     line-height: 1.2; /* Espaçamento entre linhas para melhor legibilidade */
@@ -153,8 +162,8 @@ main p{
 
 .carrossel-overlay .btn {
     display: inline-block; /* Garante que o botão seja tratado como um bloco */
-    margin-top: 10px; /* Espaçamento entre o título e o botão */
-    padding: 10px 20px; /* Tamanho do botão */
+    margin-top: 1px; /* Espaçamento entre o título e o botão */
+    padding: 5px 5px; /* Tamanho do botão */
     background-color: #0d0926; /* Cor de fundo do botão */
     color: rgba(255, 255, 255, 0.774); /* Cor do texto no botão */
     text-decoration: none; /* Remove sublinhado do link */
@@ -336,8 +345,7 @@ a.link-Whats{
 
 .item img {
     display: block;
-    max-height: 200px;
-    
+    max-height: 200px;    
     width: 100%;
     border-radius: 8px;
     margin-bottom: 1rem;
