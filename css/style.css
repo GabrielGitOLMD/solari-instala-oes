@@ -131,49 +131,7 @@ main p{
     object-fit: cover; /* Preenche o espaço do slide */
 }
 
-.carrossel-overlay {
-    position: absolute; /* Para que o conteúdo do overlay fique sobreposto à imagem */
-    top: 50%; /* Centraliza verticalmente */
-    left: 5px; /* Adiciona espaço à esquerda */
-    transform: translateY(-50%); /* Ajusta a posição para centralizar verticalmente */
-    padding: 20px; /* Adiciona espaço ao redor do texto */
-    color: white; /* Cor do texto no overlay */
-    text-align: left; /* Alinha o texto à esquerda */
-    background-color: #836e4850;
-   
-    
-    
-     /* Fundo semi-transparente para melhor legibilidade */
-    border-radius: 5px; /* Arredondamento opcional para o fundo */
-}
 
-    .carrossel-overlay a{
-        padding: 0;
-        margin-top: 0px;
-    }
-
-.carrossel-overlay h3 {
-    font-weight: 100;
-    margin-bottom: 0px;
-    margin: 0; /* Remove a margem padrão */
-    font-size: 24px; /* Tamanho da fonte do título */
-    line-height: 1.2; /* Espaçamento entre linhas para melhor legibilidade */
-}
-
-.carrossel-overlay .btn {
-    display: inline-block; /* Garante que o botão seja tratado como um bloco */
-    margin-top: 1px; /* Espaçamento entre o título e o botão */
-    padding: 10px; /* Tamanho do botão */
-    background-color: #0d0926; /* Cor de fundo do botão */
-    color: rgba(255, 255, 255, 0.774); /* Cor do texto no botão */
-    text-decoration: none; /* Remove sublinhado do link */
-    border-radius: 5px; /* Arredonda as bordas do botão */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
-}
-
-.carrossel-overlay .btn:hover {
-    background-color: #73654c; /* Cor do botão ao passar o mouse */
-}
 /* Hero Section */
 .hero {
     
