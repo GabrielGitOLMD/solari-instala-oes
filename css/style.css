@@ -136,10 +136,10 @@ main p{
     top: 50%; /* Centraliza verticalmente */
     left: 5px; /* Adiciona espaço à esquerda */
     transform: translateY(-50%); /* Ajusta a posição para centralizar verticalmente */
-    padding: 5px; /* Adiciona espaço ao redor do texto */
+    padding: 20px; /* Adiciona espaço ao redor do texto */
     color: white; /* Cor do texto no overlay */
     text-align: left; /* Alinha o texto à esquerda */
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #836e4850;
    
     
     
@@ -163,7 +163,7 @@ main p{
 .carrossel-overlay .btn {
     display: inline-block; /* Garante que o botão seja tratado como um bloco */
     margin-top: 1px; /* Espaçamento entre o título e o botão */
-    padding: 5px 5px; /* Tamanho do botão */
+    padding: 10px; /* Tamanho do botão */
     background-color: #0d0926; /* Cor de fundo do botão */
     color: rgba(255, 255, 255, 0.774); /* Cor do texto no botão */
     text-decoration: none; /* Remove sublinhado do link */
