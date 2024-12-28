@@ -1,7 +1,7 @@
 html,
 body {
     min-height: 100vh;
-    overflow-x: hidden;
+    overflow-x: auto;
     overflow-y: auto;
 }
 
@@ -12,6 +12,7 @@ body {
 }
 
 .imagemP {
+    background-color: hidden;
     background-color: rgb(255, 255, 255);
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.281);
     background-size: cover;
