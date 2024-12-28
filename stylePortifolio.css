@@ -1,6 +1,8 @@
-html, body {
-    height: 100%; /* Garante que o body ocupe toda a altura */
-    margin: 0; /* Remove a margem padrão */
+html,
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .normal {
@@ -10,32 +12,18 @@ html, body {
 }
 
 .imagemP {
-    position: relative;
     background-color: rgb(255, 255, 255);
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.281);
-    background-size: cover; /* A imagem cobre completamente o elemento */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 100vh;
-    will-change: transform; /* Melhorar performance ao usar transform */
-}
-
-/* Parallax via transform */
-.imagemP.scrolled::after {
-    transform: translateY(-10%) scale(1.1); /* Efeito parallax em dispositivos móveis */
-}
-
-
-/* Estilos adicionais para garantir que a imagem do efeito parallax funcione em celulares */
-@media (max-width: 768px) {
-    .imagemP {
-        background-attachment: fixed; /* Remove o efeito parallax em telas pequenas (como celulares) */
-        min-height: 50vh; /* Reduz a altura em dispositivos móveis */
-    }
-
-    .hero {
-        padding-bottom: 10vh;
-    }
+    background-attachment: fixed;
+    min-height: 100vh; /* Garante que cobre toda a altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
 }
 
 .hero {
@@ -50,7 +38,7 @@ section {
 }
 
 section p {
-    font-weight: 500; /* Ajuste do peso da fonte para um valor mais convencional */
+    font-weight: 550;
 }
 
 #img01 {
@@ -67,17 +55,4 @@ section p {
 
 #img04 {
     background-image: url('./imagens/portfolio4.jpg');
-}
-
-/* Ajustes para dispositivos móveis */
-@media (max-width: 768px) {
-    section {
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-        padding-left: 15px;
-    }
-
-    .imagemP {
-        min-height: 50vh; /* Reduz a altura em dispositivos móveis */
-    }
 }
