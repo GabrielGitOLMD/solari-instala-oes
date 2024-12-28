@@ -47,6 +47,7 @@ section p {
 
 #img02 {
     background-image: url('./imagens/portfolio2.jpg');
+    background-position: right center;
 }
 
 #img03 {
