@@ -1,8 +1,6 @@
-html,
-body {
-    min-height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
+html, body {
+    height: 100%; /* Garante que o body ocupe toda a altura */
+    margin: 0; /* Remove a margem padrão */
 }
 
 .normal {
@@ -12,18 +10,26 @@ body {
 }
 
 .imagemP {
+    position: relative;
     background-color: rgb(255, 255, 255);
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.281);
-    background-size: cover;
+    background-size: cover; /* A imagem cobre completamente o elemento */
     background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh; /* Garante que cubra toda a altura da tela */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Efeito parallax */
+    height: 100vh; /* Garante que a altura da seção ocupe toda a altura da tela */
+}
+
+/* Estilos adicionais para garantir que a imagem do efeito parallax funcione em celulares */
+@media (max-width: 768px) {
+    .imagemP {
+        background-attachment: scroll; /* Remove o efeito parallax em telas pequenas (como celulares) */
+        min-height: 50vh; /* Reduz a altura em dispositivos móveis */
+    }
+
+    .hero {
+        padding-bottom: 10vh;
+    }
 }
 
 .hero {
@@ -67,9 +73,5 @@ section p {
 
     .imagemP {
         min-height: 50vh; /* Reduz a altura em dispositivos móveis */
-    }
-
-    .hero {
-        padding-bottom: 10vh;
     }
 }
