@@ -44,6 +44,7 @@ section p {
 
 #img01 {
     background-image: url('./imagens/portfolio1.jpg');
+    background-position: center center;
 }
 
 #img02 {
@@ -53,8 +54,10 @@ section p {
 
 #img03 {
     background-image: url('./imagens/portfolio3.jpg');
+    background-position: center center;
 }
 
 #img04 {
     background-image: url('./imagens/portfolio4.jpg');
+    background-position: center center;
 }
