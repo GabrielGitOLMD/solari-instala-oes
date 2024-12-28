@@ -15,10 +15,16 @@ html, body {
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.281);
     background-size: cover; /* A imagem cobre completamente o elemento */
     background-repeat: no-repeat;
-    background-position: center center; /* Centraliza a imagem */
-    background-attachment: fixed; /* Efeito parallax */
-    height: 100vh; /* Garante que a altura da seção ocupe toda a altura da tela */
+    background-position: center center;
+    height: 100vh;
+    will-change: transform; /* Melhorar performance ao usar transform */
 }
+
+/* Parallax via transform */
+.imagemP.scrolled::after {
+    transform: translateY(-10%) scale(1.1); /* Efeito parallax em dispositivos móveis */
+}
+
 
 /* Estilos adicionais para garantir que a imagem do efeito parallax funcione em celulares */
 @media (max-width: 768px) {

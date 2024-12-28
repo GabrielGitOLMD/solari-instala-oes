@@ -13,3 +13,15 @@ function nextSlide() {
 }
 
 setInterval(nextSlide, 5000); // Muda de slide a cada 5 segundos
+
+document.addEventListener("scroll", function() {
+    const imagemP = document.querySelectorAll('.imagemP');
+    
+    imagemP.forEach(function(el) {
+        if (window.scrollY > el.offsetTop - window.innerHeight) {
+            el.classList.add('scrolled'); // Ativa o efeito de parallax
+        } else {
+            el.classList.remove('scrolled'); // Desativa o efeito
+        }
+    });
+});
