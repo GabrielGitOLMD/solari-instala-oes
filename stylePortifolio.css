@@ -3,12 +3,11 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    perspective: 2px;
 }
 
 .normal {
     background-color: white;
-    text-align: center;           
+    text-align: center;
     color: rgb(0, 0, 0);
 }
 
@@ -16,19 +15,19 @@ body {
     background-color: rgb(255, 255, 255);
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.281);
     background-size: cover;
-    
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-attachment: fixed;
-    padding-top: 50vh;
-    padding-bottom: 50vh;
-
-
+    min-height: 100vh; /* Garante que cubra toda a altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
 }
-.hero{
-    padding-bottom: 0px;
-   
-   
+
+.hero {
+    padding-bottom: 0;
 }
 
 section {
@@ -36,48 +35,41 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    
-    
-
 }
 
 section p {
-    font-weight: 550;
-
+    font-weight: 500; /* Ajuste do peso da fonte para um valor mais convencional */
 }
 
 #img01 {
     background-image: url('./imagens/portfolio1.jpg');
-    
-    
-
-
 }
 
 #img02 {
     background-image: url('./imagens/portfolio2.jpg');
-    
-   
-
 }
 
 #img03 {
     background-image: url('./imagens/portfolio3.jpg');
-    
-    
-
 }
 
 #img04 {
-    
-    background-image: url('./imagens/portfolio4.jpg');    
-    
-
-    
-    
-    
-    
-   
-
+    background-image: url('./imagens/portfolio4.jpg');
 }
 
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    section {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        padding-left: 15px;
+    }
+
+    .imagemP {
+        min-height: 50vh; /* Reduz a altura em dispositivos móveis */
+    }
+
+    .hero {
+        padding-bottom: 10vh;
+    }
+}
