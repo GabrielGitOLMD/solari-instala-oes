@@ -23,7 +23,7 @@ html, body {
 /* Estilos adicionais para garantir que a imagem do efeito parallax funcione em celulares */
 @media (max-width: 768px) {
     .imagemP {
-        background-attachment: scroll; /* Remove o efeito parallax em telas pequenas (como celulares) */
+        background-attachment: fixed; /* Remove o efeito parallax em telas pequenas (como celulares) */
         min-height: 50vh; /* Reduz a altura em dispositivos móveis */
     }
 
