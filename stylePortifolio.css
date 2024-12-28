@@ -1,0 +1,83 @@
+html,
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+.normal {
+    background-color: white;
+    text-align: center;           
+    color: rgb(0, 0, 0);
+}
+
+.imagemP {
+    background-color: rgba(0, 0, 0, 0.356);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.281);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+
+
+}
+.hero{
+    padding-bottom: 0px;
+   
+   
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    
+    
+
+}
+
+section p {
+    font-weight: 550;
+
+}
+
+#img01 {
+    background-image: url('./imagens/portfolio1.jpg');
+    
+    
+
+
+}
+
+#img02 {
+    background-image: url('./imagens/portfolio2.jpg');
+    
+   
+
+}
+
+#img03 {
+    background-image: url('./imagens/portfolio3.jpg');
+    
+    
+
+}
+
+#img04 {
+    
+    background-image: url('./imagens/portfolio4.jpg');    
+    
+
+    
+    
+    
+    
+   
+
+}
+
