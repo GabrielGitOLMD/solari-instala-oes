@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Solari Instalações</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="stylePortifolio.css">
 </head>
@@ -16,13 +17,15 @@
             <h1>Solari Instalações</h1>
         </div>
     </header>
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
     
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="servicos.html">Serviços</a>
-
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
+    <nav id="itens">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
     </nav>
 
     <main>
@@ -64,9 +67,7 @@
             <div class="portfolio-info">
 
                 <h3>Projeto de Instalação de Painéis Solares</h3>
-                <p>Instalação de sistemas de energia solar, promovendo a sustentabilidade e redução de custos de energia.</p>
-
-              
+                <p>Instalação de sistemas de energia solar, promovendo a sustentabilidade e redução de custos de energia.</p>              
             </div>
         </section>
 
@@ -88,10 +89,8 @@
     <footer>
         <p>&copy; 2024 Solari Instalações. Todos os direitos reservados.</p>
     </footer>
-
-        
-
-       
+    <!-- Chamando o arquivo JavaScript -->
+    <script src="script.js"></script>       
 </body>
 
 </html>

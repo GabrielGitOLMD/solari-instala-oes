@@ -15,23 +15,21 @@
     margin: 0px;
     padding: 0px;
 }
-body {
+body ,html{
    
    background-color: #a68c5d59;
+   overflow-x: hidden;
+   overflow-y: auto;
     
      
 }
-
-
-
-
 header {
     
      background-image: linear-gradient(to bottom,var(--cor2), var(--cor5));
-     min-height: 100px;
+     width: 100%;
      text-align: center;
-     padding: 40px;
-     padding-top: 20px;
+  
+    
     
     
 }
@@ -40,46 +38,61 @@ header .logo {
   
     align-items: center;
     color: white;
-    padding-bottom: 25px;
+    padding: 10px;
     
     
 }
 
 
 header .logo img {
-    float: left;
-    
+    float: left;    
     margin-right: 10px;
     border-radius: 10px;
 }
 
 nav {
+    
    background-color: var(--cor5);
    padding: 10px;
-   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.342);     
+   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.342);
+   display: none;     
+   
      
     
            
 }
+#burguer{
+    background-color: var(--cor5);
+    color: white;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+#burguer :hover{
+    background-color: white;
+    color: #000000;
+}
 
 
 nav a {
+    display: block;
     color: var(--cor2);
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
+    border-top: 2px solid #0d0926;
     transition-duration: 0.5s;
     
     
 }
-nav >:hover{
+nav a:hover{
     background-color: var(--cor2);
     color: var(--cor5);
 }
 main{
-    min-width: 100px;
-    max-width: 1000px;
+    width: 90vw;
     margin: auto;
     background-color: white;
     padding: 20px;
@@ -116,6 +129,7 @@ main p{
 }
 
 .carrossel-container {
+    width: 100vw;
     display: flex;
     transition: transform 0.9s ease;
 }
@@ -131,12 +145,8 @@ main p{
     object-fit: cover; /* Preenche o espaço do slide */
 }
 
-
 /* Hero Section */
-.hero {
-    
-
-   
+.hero {   
     padding: 1rem 0;
     text-align: center;
     color: #000000;
@@ -172,41 +182,30 @@ main p{
     padding: 10px;
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
-
-  
-
-    
-
 }
-.servicos > div.container.servico-container{
 
-    
-    
+.servicos > div.container.servico-container{
     background-color: #0d092656;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.445);
-    min-width: 100px;
-
-
+    min-width: 80vw;
 }
-div.item.servico-item{
-    
-    display: inline-block;
+div.item.servico-item{    
+    display: block;
     margin-left: 10px;
     margin-top: 10px;    
-    max-width: 300px;   
+    width: 50vw;    
     margin-bottom: 20px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.349);
-    min-width: 100px;
-    padding: 10px;
-
-   
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.349);    
+    padding: 10px;   
     
     
-    
-    
-   
+}
+.item.servico-item p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
 }
 .item .btn {
     background-color: #0d0926;    
@@ -245,9 +244,6 @@ div.item.servico-item{
     cursor: pointer;
     border-radius: 5px;
 }
-
-
-
 /* Botões */
 .cta-button, .item .btn {
     display: inline-block;
@@ -257,11 +253,6 @@ div.item.servico-item{
     color: #ffffff;
     transition: background-color 0.2s;
 }
-
-
-
-
-
 .cta-button:hover, .item .btn:hover {
     background-color: #73654c;
 }
@@ -369,16 +360,11 @@ button:hover {
     transition: all 0.3s ease;
 }
 
-
-
 .hero-text,
 .servico-item {
     text-align: center;
 
 }
-
-
-
 
 form {
     max-width: 600px;

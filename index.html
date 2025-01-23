@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-bt">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Solari Instalações</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
 </head>
-
-
 <body>
-    <header>
+    <header>       
         <div class="logo">
             <img src="imagens/logo.png" alt="Logo Solari Instalações">
             <h1>Solari Instalações</h1>
             <h3>Especialistas em reformas e instalações elétricas.</h3>
         </div>
-    </header>
-    <nav>
-
-
       
-        <a href="servicos.html">Serviços</a>
-        <a href="portfolio.html">Portfólio</a>
-        <a href="sobre.html">Sobre Nós</a>
-        <a href="contato.html">Contato</a>
-
+    </header> 
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    <nav id="itens">
+        <ul>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        </ul>  
     </nav>
-
-
-    <main>
-        <section class="carrossel">
-            <div class="carrossel-container">
-                <div class="carrossel-slide">
-                    <source media="(max-width: 750px)" srcset="imagens/carrosel/trabalho3-300.png" type="image/png">
-                    <source media="(max-width: 1050px)" srcset="imagens/carrosel/trabalho3-700.png" type="image/png">
-                    <img src="imagens/carrosel/trabalho3-1000.png" alt="Imagem 1">
-                   
-                </div>
-                <div class="carrossel-slide">
-                    <source media="(min-width: 750px)" srcset="imagens/carrosel/imagenPainel300.png" type="image/png">
-                    <source media="(max-width: 1050px)" srcset="imagens/carrosel/imagenPainel700.png" type="image/png">
-                    <img src="imagens/carrosel/imagenPainel1000.png" alt="Imagem 2">
-                   
-                </div>
-                <div class="carrossel-slide">
-
-                    <source media="(max-width: 750px)" srcset="imagens/carrosel/imagenAnd300.png" type="image/png">
-                    <source media="(max-width: 1050)" srcset="imagens/carrosel/imagenAnd700.png" type="image/png">
-                    <img src="imagens/carrosel/imagenAnd1000.png" alt="Imagem 3">
-                   
-                </div>
-                <!-- Adicione mais slides conforme necessário -->
+    <section class="carrossel">
+        <div class="carrossel-container">
+            <div class="carrossel-slide">
+                <source media="(max-width: 750px)" srcset="imagens/carrosel/trabalho3-300.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="imagens/carrosel/trabalho3-700.png" type="image/png">
+                <img src="imagens/carrosel/trabalho3-1000.png" alt="Imagem 1">
             </div>
-        </section>
+            <div class="carrossel-slide">
+                <source media="(min-width: 750px)" srcset="imagens/carrosel/imagenPainel300.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="imagens/carrosel/imagenPainel700.png" type="image/png">
+                <img src="imagens/carrosel/imagenPainel1000.png" alt="Imagem 2">
+
+            </div>
+            <div class="carrossel-slide">
+
+                <source media="(max-width: 750px)" srcset="imagens/carrosel/imagenAnd300.png" type="image/png">
+                <source media="(max-width: 1050)" srcset="imagens/carrosel/imagenAnd700.png" type="image/png">
+                <img src="imagens/carrosel/imagenAnd1000.png" alt="Imagem 3">
+
+            </div>
+            <!-- Adicione mais slides conforme necessário -->
+        </div>
+    </section>
+    <main>
+       
 
         <section class="hero">
             <h2>Bem-vindo à Solari Instalações!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, laborum magnam sapiente cupiditate officiis enim ut unde animi repellendus velit excepturi officia voluptatem tempora vel harum odio beatae quisquam pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fugit, vitae corrupti mollitia amet aliquam asperiores nisi laborum adipisci provident quis impedit cumque veniam fuga ullam maxime nemo modi officiis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti similique quidem, suscipit, at doloremque expedita repudiandae quo hic placeat nihil quam inventore dolor, magni sequi in ratione nam sunt! Iusto! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, asperiores dolorum eligendi rerum voluptate quae ad laboriosam soluta hic unde ullam incidunt. Quos, dignissimos? Dolorem quidem voluptas minus nam perspiciatis?</p>
-         
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, laborum magnam sapiente cupiditate
+                officiis enim ut unde animi repellendus velit excepturi officia voluptatem tempora vel harum odio beatae
+                quisquam pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fugit, vitae
+                corrupti mollitia amet aliquam asperiores nisi laborum adipisci provident quis impedit cumque veniam
+                fuga ullam maxime nemo modi officiis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti similique quidem, suscipit, at
+                doloremque expedita repudiandae quo hic placeat nihil quam inventore dolor, magni sequi in ratione nam
+                sunt! Iusto! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, asperiores dolorum eligendi
+                rerum voluptate quae ad laboriosam soluta hic unde ullam incidunt. Quos, dignissimos? Dolorem quidem
+                voluptas minus nam perspiciatis?</p>
+
         </section>
 
         <section class="servicos">
-            
+
             <div class="container servico-container">
                 <h2>Serviços</h2>
                 <div class="item servico-item">
@@ -83,8 +86,6 @@
                 <!-- Adicione mais serviços conforme necessário -->
             </div>
         </section>
-
-
         <div class="whatsapp-logo">
 
             <a href="https://wa.me/556182347904" target="_blank" class="link-Whats">
@@ -99,13 +100,8 @@
                 direitos reservados.</p>
         </div>
     </footer>
-
-
     <!-- Chamando o arquivo JavaScript -->
     <script src="script.js"></script>
-
-   
-
 </body>
 
 </html>
