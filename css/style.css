@@ -191,44 +191,48 @@ main p{
 }
 
 .servicos > div.container.servico-container{
-    margin: auto;
+    flex-direction: column;
+    gap: 20px;
     background-color: #0d092656;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.445);
     min-width: min-content;
 }
-div.item.servico-item{    
-    display: inline-block;  
-    width: min-content; 
-       
-    margin: 10px;
+.item.servico-item{    
+    display: inline-block; 
+   
+    width: 35%; 
+    
+    margin: 10px 0;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.349);    
     padding: 10px;      
 }
+
 .item img {
     display: inline-block;       
-    width: auto;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
-    margin-bottom: 1rem;
+    
 }
 .item:hover {
     transform: translateY(-5px);
 }
 
-.item h3 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
+.item.servico-item h3 {
+    font-size: 1rem;
+   
 }
 
 .item.servico-item p{
     text-align: justify;
-    margin-bottom: 20px;
+   
     text-indent: 20px;
 }
 .item .btn {
     background-color: #0d0926;    
-    margin-top: auto;
+    
 }
 .item {
    
