@@ -18,7 +18,7 @@
 }
 body ,html{
    
-   background-color: #a68c5d59;
+   background-color: #5f51362d;
 
    
    overflow-x: hidden;
@@ -326,13 +326,7 @@ a.link-Whats{
 }
 
 
-footer{
-    background-color: var(--cor5);
-    color: white;
-    text-align: center;
-    font-size: 0.8em;
-    padding: 5px;
-}
+
 
 
 /* contato */
@@ -405,4 +399,12 @@ form {
 }
 .InfoContato p{
     margin: 0px;
+}
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    
 }
