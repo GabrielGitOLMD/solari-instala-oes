@@ -212,6 +212,7 @@ main p{
     display: inline-block; 
    
     width: 150px; 
+    height: 250px;
     
     margin: 10px 0;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.349);    
@@ -230,20 +231,28 @@ main p{
 }
 
 .item.servico-item h3 {
-    font-size: 1rem;
+    font-size: .8rem;
    
 }
 
 .item.servico-item p{
+    font-size: .8em;
     letter-spacing: -0.5px;
     text-align: justify;
-   
+    transform: translateY(-15px);
     text-indent: 20px;
 }
 .item .btn {
-    background-color: #0d0926;    
+   
+    background-color: #0d0926;  
+   margin-top: -15px;
+   
+   
+   transform: translateY(-15px);
+   
     
 }
+
 .item {
    
     background-color: white;
