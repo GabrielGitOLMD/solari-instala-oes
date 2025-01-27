@@ -31,3 +31,15 @@ function clickMenu(){
         itens.style.display = 'block'
     }
 }
+
+
+/* formulario */
+
+document.getElementById('servico').addEventListener('change', function () {
+    var detalhesReforma = document.getElementById('detalhes-reforma');
+    if (this.value === 'Reforma Fechada') {
+        detalhesReforma.style.display = 'block';
+    } else {
+        detalhesReforma.style.display = 'none';
+    }
+});

@@ -39,7 +39,7 @@
 
         <section class="contato">
             <h2>Formulário de Contato</h2>
-            <form action="https://formspree.io/f/movqjgry" method="POST">
+            <form action="https://formspree.io/f/movqjgry" method="POST" autocomplete="on">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
 
@@ -86,23 +86,15 @@
                 <button type="submit">Solicitar Serviço</button>
             </form>
 
-            <script>
-                document.getElementById('servico').addEventListener('change', function () {
-                    var detalhesReforma = document.getElementById('detalhes-reforma');
-                    if (this.value === 'Reforma Fechada') {
-                        detalhesReforma.style.display = 'block';
-                    } else {
-                        detalhesReforma.style.display = 'none';
-                    }
-                });
-            </script>
-            <div class="InfoContato">
-                <h2>Informações de Contato</h2>
-                <p><strong>Telefone:</strong> (61) 8234-7904 </p>
-                <p><strong>Email:</strong> Solariinstalacoes19@gmail.com</p>
-                <p><strong>Endereço:</strong> Avenida araucárias, Águas claras CEP 12345-678</p>
-            </div>
+           
+           
         </section>
+        <div class="InfoContato">
+            <h2>Informações de Contato</h2>
+            <p><strong>Telefone:</strong> (61) 8234-7904 </p>
+            <p><strong>Email:</strong> Solariinstalacoes19@gmail.com</p>
+            <p><strong>Endereço:</strong> Avenida araucárias, Águas claras CEP 12345-678</p>
+        </div>
 
     </main>
 
