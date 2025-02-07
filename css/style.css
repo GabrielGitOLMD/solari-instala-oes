@@ -186,6 +186,7 @@ main p{
 
 }
 .servicos h2{
+    
     background-color: var(--cor1);
     color: white;
     font-size: 2em;
@@ -193,38 +194,42 @@ main p{
     text-indent: 8px;
     margin-bottom: 20px;
     padding: 10px;
-    margin: -10px -10px 0px -10px;
+    margin: 0px 0px 0px 0px;
     border-radius: 10px 10px 0px 0px;
+  
+    
 }
+
 .servicos{
    
+   margin: 20px;
+   border-radius: 10px;
   
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
+    
     
 }
 
-.servicos > div.container.servico-container{
- 
-
+.servicos > div.container.servico-container{    
+    background-color: #0d092656;  
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
     
 
     
-     background-color: #0d092656;  
-
-    width: 100%;
     
     padding: 10px;
-    border-radius: 10px;
+   
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.445);
+    border-radius: 0px 0px 10px 10px;
     
     
     
 }
 .item.servico-item{     
-    display: inline-block;
+    
     width: 150px; 
     height: 259px;
     
@@ -303,7 +308,7 @@ main p{
 }
 /* Botões */
 .cta-button, .item .btn {
-    display: inline-block;
+    
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
