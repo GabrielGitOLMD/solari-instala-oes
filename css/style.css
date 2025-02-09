@@ -200,49 +200,67 @@ main p{
     
 }
 
-.servicos{
-   
-   margin: 20px;
-   border-radius: 10px;
-  
-    
-    
-}
 
 .servicos > div.container.servico-container{    
     background-color: #0d092656;  
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center;   
     
-    
-
-    
-    
-    padding: 10px;
-   
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.445);
+    padding: 0px;  
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.349);
     border-radius: 0px 0px 10px 10px;
     
     
     
 }
-.item.servico-item{     
+.item.servico-item{   
     
-    width: 150px; 
-    height: 259px;
     
-    margin: 10px 0;
-    
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.349);    
+    flex-basis: 150px;      
+    border: solid .1px #0d092667;
+    height: 259px;      
+    margin: 10px 0;   
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.24);    
     padding: 10px;      
 }
+.item {
+   
+    background-color: white;
+    
+    border-radius: 8px;
+ 
+    
+    transition: transform 0.3s;
+    
+
+}
+.item .btn {      
+    background-color: #0d0926;  
+    /* margin-top: 25px;   */ 
+    transform: translateY(0);
+    transform: translateY(-15px);    
+    display: block;
+    flex-basis: 10px;
+    
+    width:100%;
+    padding: 5px;
+
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    white-space: nowrap;
+
+
+    
+}
+
 
 .item img {
          
     width: 100%;
-    height: 35%;
+    height: 31%;
     border-radius: 8px;
     
 }
@@ -252,38 +270,22 @@ main p{
 
 .item.servico-item h3 {
     font-size: .8rem;
+    white-space: nowrap;
    
 }
 
 .item.servico-item p{
+    margin-top: 25px;
     font-size: .8em;
     letter-spacing: -0.5px;
     text-align: justify;
     transform: translateY(-15px);
     text-indent: 20px;
-}
-.item .btn {
-   
-    background-color: #0d0926;  
-   margin-top: -15px;
-   
-   
-   transform: translateY(-15px);
-   
-    
+    white-space: wrap;
 }
 
-.item {
-   
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
-    transition: transform 0.3s;
-    
 
-}
+
 
 /* Contato Section */
 .contato h2{
