@@ -1,4 +1,17 @@
 @charset "utf-8";
+:root{
+    --cor00: #0d0926d0;
+    --cor0: #A68C5d;
+    --cor2: #73654cd5;
+    --cor1: #0D0926;
+    --cor3: #010D00;
+    --cor4: #202136; /* Nova cor intermediária */
+    --cor5: #00010d;
+    --cor2-light: #948471; /* Variante mais clara de cor2 */
+    --cor5-dark: #000015;  
+    
+
+}
 
 /* 
 typical device breakpoints
@@ -14,6 +27,9 @@ grandes telas: acima de 1200px;
     #burguer{
         display: none;
     }
+    
+    
+    
     nav{
         display: block;
         text-align: right;
