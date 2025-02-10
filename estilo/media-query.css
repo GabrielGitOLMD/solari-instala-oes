@@ -16,6 +16,7 @@ grandes telas: acima de 1200px;
     }
     nav{
         display: block;
+        text-align: right;
     }
     li{
         display: inline-block;
