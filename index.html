@@ -1,207 +1,199 @@
 <!DOCTYPE html>
 <html lang="pt-bt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Solari Instalações</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" media="all">
     <link rel="stylesheet" href="estilo/media-query.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
+
 <body onresize="mudouTamanho()">
-    <header>       
-        <div class="logo">
-            <img src="imagens/logo.png" alt="Logo Solari Instalações">
-            <h1>Solari Instalações</h1>
+
+    <header>
+        <div class="box">
+        <h1>
+            <img width="150px"  src="imagens/logo.png" alt="Logo Solari Instalações">
             
+
+        </h1>
+ 
+
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        
+        <nav id="menu">
+            <ul>
+                <li><a href="servicos.html">Serviços</a></li>
+                
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
         </div>
-      
-   
-    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-    <nav id="itens">
-        <ul>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="portfolio.html">Portfólio</a></li>
-        <li><a href="sobre.html">Sobre Nós</a></li>
-        <li><a href="contato.html">Contato</a></li>
-        </ul>  
-    </nav>
-</header> 
-   
-    <main>
-        <section class="carrossel">
-            <div class="carrossel-container">
-                <div class="carrossel-slide">
-                    <source media="(max-width: 750px)" srcset="imagens/carrosel/trabalho3-300.png" type="image/png">
-                    <source media="(max-width: 1050px)" srcset="imagens/carrosel/trabalho3-700.png" type="image/png">
-                    <img src="imagens/carrosel/trabalho3-1000.png" alt="Imagem 1">
-                </div>
-                <div class="carrossel-slide">
-                    <source media="(min-width: 750px)" srcset="imagens/carrosel/imagenPainel300.png" type="image/png">
-                    <source media="(max-width: 1050px)" srcset="imagens/carrosel/imagenPainel700.png" type="image/png">
-                    <img src="imagens/carrosel/imagenPainel1000.png" alt="Imagem 2">
+    </header>
+
     
-                </div>
-                <div class="carrossel-slide">
-    
-                    <source media="(max-width: 750px)" srcset="imagens/carrosel/imagenAnd300.png" type="image/png">
-                    <source media="(max-width: 1050)" srcset="imagens/carrosel/imagenAnd700.png" type="image/png">
-                    <img src="imagens/carrosel/imagenAnd1000.png" alt="Imagem 3">
-    
-                </div>
-                <!-- Adicione mais slides conforme necessário -->
+        <div class="carrossel-container">
+            <div class="carrossel-slide">
+                <source media="(max-width: 750px)" srcset="imagens/carrosel/trabalho3-300.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="imagens/carrosel/trabalho3-700.png" type="image/png">
+                <img src="imagens/carrosel/trabalho3-1000.png" alt="Imagem 1">
             </div>
-        </section>
+            <div class="carrossel-slide">
+                <source media="(min-width: 750px)" srcset="imagens/carrosel/imagenPainel300.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="imagens/carrosel/imagenPainel700.png" type="image/png">
+                <img src="imagens/carrosel/imagenPainel1000.png" alt="Imagem 2">
+
+            </div>
+            <div class="carrossel-slide">
+
+                <source media="(max-width: 750px)" srcset="imagens/carrosel/imagenAnd300.png" type="image/png">
+                <source media="(max-width: 1050)" srcset="imagens/carrosel/imagenAnd700.png" type="image/png">
+                <img src="imagens/carrosel/imagenAnd1000.png" alt="Imagem 3">
+
+            </div>
+            <!-- Adicione mais slides conforme necessário -->
+        </div>
+    
+
+    <main>
+
         <section class="hero">
             <h2>Bem-vindo à Solari Instalações!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, laborum magnam sapiente cupiditate
-                officiis enim ut unde animi repellendus velit excepturi officia voluptatem tempora vel harum odio beatae
-                quisquam pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fugit, vitae
-                corrupti mollitia amet aliquam asperiores nisi laborum adipisci provident quis impedit cumque veniam
-                fuga ullam maxime nemo modi officiis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti similique quidem, suscipit, at
-                doloremque expedita repudiandae quo hic placeat nihil quam inventore dolor, magni sequi in ratione nam
-                sunt! Iusto! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, asperiores dolorum eligendi
-                rerum voluptate quae ad laboriosam soluta hic unde ullam incidunt. Quos, dignissimos? Dolorem quidem
-                voluptas minus nam perspiciatis?</p>
+            <p>Desde 2015, a Solari Instalações tem trabalhado sem medir esforços para oferecer soluções eficientes e
+                seguras em instalações elétricas e reformas. Aqui você encontrará <strong >serviços de excelente qualidade</strong>, com
+                preços que cabem no seu bolso.
+            </p>
+            <p> Nossos clientes costumam dizer: <em>“Se minha casa está segura e bem estruturada, eu estou tranquilo. Por
+                isso, confio no trabalho da Solari.”</em>
+            </p>
+            <p>
+                Trabalhamos com os melhores materiais e contamos com uma equipe de profissionais altamente qualificados
+                para atender às suas necessidades. Sempre que precisar, conte com nossos especialistas ou conheça nossos
+                parceiros, incluindo empresas de engenharia, arquitetos e técnicos especializados.
+            </p>
+            <p>
+                Confie na Solari Instalações para garantir conforto, segurança e qualidade para seu espaço!</p>
+            </p>
+        </section>
 
+
+        <section class="diferencial">
+            <h3 class="titulo-centralizado">Nosso diferencial</h3>
+            <div class="conteudo-diferencial">
+            <ul class="lista-itens">
+                <li class="itens">Profissionais qualificados</li><br>
+                <li class="itens">Produtos de qualidade</li><br>
+                <li class="itens">Sistema leva e traz</li>
+            </ul>
+            
+            <img  class="imagemdiferencial"  src="imagens/testsiteAnd.PNG" alt="foto">
+            </div>
+            <div class="video">
+           
+            </div>
+
+        </section>
+        
+        <section class="mapa" style="margin-bottom: 20px;">
+            <h3 class="titulo-centralizado">Onde estamos</h3>
+            <p >Estamos no melhor local da cidade para facilitar a sua vida.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61415.16044729499!2d-48.06686943392117!3d-15.833059061900558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a326b07233ecd%3A0x77f692f28d1b9f0e!2s%C3%81guas%20Claras%2C%20Bras%C3%ADlia%20-%20DF!5e0!3m2!1spt-BR!2sbr!4v1746148086372!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
         <section class="servicos">
             <h2>Serviços</h2>
             <div class="container servico-container">
-                
-                
+
+
+
                 
                 <div class="item servico-item">
                     <img src="imagens/trabalho2.jpg" alt="Serviço 1">
                     <div class="itdit">
-                    <h3>Instalação Elétrica</h3>
-                </div>
-                    <div class="fcp">
-                    <p>Realizamos instalações elétri-cas  de qualidade e segurança.</p>
+                        <h3>Instalação Elétrica</h3>
                     </div>
-                    <div class="btnit"><a href="#" class="btn" >Saiba Mais</a></div>
+                    <div class="fcp">
+                        <p>Realizamos instalações elétri-cas de qualidade e segurança.</p>
+                    </div>
+                    <div class="btnit"><a href="contato.html" class="btn">Saiba Mais</a></div>
+
+
+                </div>
                 
-                
+                <div class="item servico-item">
+                    <img src="imagens/placaSolar.jpeg" alt="Serviço 1">
+                    <div class="itdit">
+                        <h3>Instalação De Placa</h3>
+                    </div>
+                    <div class="fcp">
+                        <p> instalações e manutençao de placas solares.</p>
+                    </div>
+                    <div class="btnit"><a href="contato.html" class="btn">Saiba Mais</a></div>
+
+
                 </div>
                 <div class="item servico-item">
-                    <img src="imagens/trabalho2.jpg" alt="Serviço 1">
+                    <img src="imagens/drywall.jpeg" alt="Serviço 1">
                     <div class="itdit">
-                    <h3>Instalação Elétrica</h3>
-                </div>
-                    <div class="fcp">
-                    <p>Realizamos instalações elétri-cas  de qualidade e segurança.</p>
+                        <h3>Instalação drywall</h3>
                     </div>
-                    <div class="btnit"><a href="#" class="btn" >Saiba Mais</a></div>
-                
-                
+                    <div class="fcp">
+                        <p>instalações <br> drywall de qualidade e segurança.</p>
+                    </div>
+                    <div class="btnit"><a href="contato.html" class="btn">Saiba Mais</a></div>
+
+
                 </div>
                 <div class="item servico-item">
-                    <img src="imagens/trabalho2.jpg" alt="Serviço 1">
+                    <img src="imagens/moveisPla.jpeg" alt="Serviço 1">
                     <div class="itdit">
-                    <h3>Instalação Elétrica</h3>
-                </div>
-                    <div class="fcp">
-                    <p>Realizamos instalações elétri-cas  de qualidade e segurança.</p>
+                        <h3>Moveis Planejados</h3>
                     </div>
-                    <div class="btnit"><a href="#" class="btn" >Saiba Mais</a></div>
-                
-                
+                    <div class="fcp">
+                        <p>Realizamos instalações dos moveis Planejados.</p>
+                    </div>
+                    <div class="btnit"><a href="contato.html" class="btn">Saiba Mais</a></div>
+
+
                 </div>
                 <div class="item servico-item">
-                    <img src="imagens/trabalho2.jpg" alt="Serviço 1">
+                    <img src="imagens/manuten.jpeg" alt="Serviço 1">
                     <div class="itdit">
-                    <h3>Instalação Elétrica</h3>
-                </div>
-                    <div class="fcp">
-                    <p>Realizamos instalações elétri-cas  de qualidade e segurança.</p>
+                        <h3>Instalação Elétrica</h3>
                     </div>
-                    <div class="btnit"><a href="#" class="btn" >Saiba Mais</a></div>
-                
-                
+                    <div class="fcp">
+                        <p>Realizamos a manutençao dos serviços prestados pela solari.</p>
+                    </div>
+                    <div class="btnit"><a href="contato.html" class="btn">Saiba Mais</a></div>
+
+
                 </div>
                 <div class="item servico-item">
-                    <img src="imagens/trabalho2.jpg" alt="Serviço 1">
+                    <img src="imagens/preventiva.jpeg" alt="Serviço 1">
                     <div class="itdit">
-                    <h3>Instalação Elétrica</h3>
-                </div>
-                    <div class="fcp">
-                    <p>Realizamos instalações elétri-cas  de qualidade e segurança.</p>
+                        <h3>Preventiva</h3>
                     </div>
-                    <div class="btnit"><a href="#" class="btn" >Saiba Mais</a></div>
-                
-                
-                </div>
-                <div class="item servico-item">
-                    <img src="imagens/trabalho2.jpg" alt="Serviço 1">
-                    <div class="itdit">
-                    <h3>Instalação Elétrica</h3>
-                </div>
                     <div class="fcp">
-                    <p>Realizamos instalações elétri-cas  de qualidade e segurança.</p>
+                        <p>Preventiva, corretiva e pequenos reparos.</p>
                     </div>
-                    <div class="btnit"><a href="#" class="btn" >Saiba Mais</a></div>
-                
-                
-                </div>
-                <div class="item servico-item">
-                    <img src="imagens/trabalho2.jpg" alt="Serviço 1">
-                    <div class="itdit">
-                    <h3>Instalação Elétrica</h3>
-                </div>
-                    <div class="fcp">
-                    <p>Realizamos instalações elétri-cas  de qualidade e segurança.</p>
-                    </div>
-                    <div class="btnit"><a href="#" class="btn" >Saiba Mais</a></div>
-                
-                
-                </div>
-                <div class="item servico-item">
-                    <img src="imagens/trabalho2.jpg" alt="Serviço 1">
-                    <div class="itdit">
-                    <h3>Instalação Elétrica</h3>
-                </div>
-                    <div class="fcp">
-                    <p>Realizamos instalações elétri-cas  de qualidade e segurança.</p>
-                    </div>
-                    <div class="btnit"><a href="#" class="btn" >Saiba Mais</a></div>
-                
-                
-                </div>
-                <div class="item servico-item">
-                    <img src="imagens/trabalho2.jpg" alt="Serviço 1">
-                    <div class="itdit">
-                    <h3>Instalação Elétrica</h3>
-                </div>
-                    <div class="fcp">
-                    <p>Realizamos instalações elétri-cas  de qualidade e segurança.</p>
-                    </div>
-                    <div class="btnit"><a href="#" class="btn" >Saiba Mais</a></div>
-                
-                
-                </div>
-                <div class="item servico-item">
-                    <img src="imagens/trabalho2.jpg" alt="Serviço 1">
-                    <div class="itdit">
-                    <h3>Instalação Elétrica</h3>
-                </div>
-                    <div class="fcp">
-                    <p>Realizamos instalações elétri-cas  de qualidade e segurança.</p>
-                    </div>
-                    <div class="btnit"><a href="#" class="btn" >Saiba Mais</a></div>
-                
-                
+                    <div class="btnit"><a href="contato.html" class="btn">Saiba Mais</a></div>
+
+
                 </div>
                 
-                </div>
-                <!-- Adicione mais serviços conforme necessário -->
+               
+            </div>
+            <!-- Adicione mais serviços conforme necessário -->
             </div>
         </section>
         <div class="whatsapp-logo">
 
-            <a href="https://wa.me/556182347904" target="_blank" class="link-Whats">
+            <a href="https://wa.me/5561986076092" target="_blank" class="link-Whats">
                 <img src="imagens/novaLogo.png" alt="WhatsApp">
             </a>
 
@@ -209,20 +201,13 @@
     </main>
     <footer>
         <div class="footer-text">
-            <p style=" text-shadow: 1px 1px 5px rgba(252, 252, 252, 0.329);">© 2024 Solari Instalações. Todos os
+            
+           <img width="150px" src="imagens/logo.png" alt="Logo Solari Instalações">
+            <p style=" text-shadow: 1px 1px 5px rgba(252, 252, 252, 0.329);">  © 2024 Solari Instalações. Todos os
                 direitos reservados.</p>
         </div>
     </footer>
-    <script>
-    function mudouTamanho(){
-        if (window.innerWidth >= 768){
-            itens.style.display = 'block'
-        }else{
-            itens.style.display = 'none'
-        }
-    }
 
-    </script>
     <!-- Chamando o arquivo JavaScript -->
     <script src="script.js"></script>
 </body>

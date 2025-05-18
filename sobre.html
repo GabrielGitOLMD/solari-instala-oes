@@ -11,26 +11,33 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+     <link rel="stylesheet" href="css/reset.css">
 </head>
 <body onresize="mudouTamanho()">
-    <header>
-        <div class="logo">
-            <img src="imagens/logo.png" alt="Logo da Solari" />
-            <h1>Solari Instalações</h1>
-        </div>
-     
-  
-    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-    <nav id="itens">
+       <header>
+        <div class="box">
+        <h1>
+            <img width="150px" src="imagens/logo.png" alt="Logo da Solari" />
+            
         
+        </h1>
+        
+    
+   
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+
+
+
+    <nav id="menu">          
         <ul>
             <li><a href="index.html">Início</a></li>
+            
             <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="portfolio.html">Portfólio</a></li>
             <li><a href="contato.html">Contato</a></li>
         </ul>
-        
+   
     </nav>
+    </div>
 </header>
 <main>
     <section class="hero">
@@ -48,11 +55,11 @@
         <p>Nosso objetivo é assegurar a satisfação total dos nossos clientes por meio de serviços elétricos e de reforma que sejam confiáveis, seguros e eficientes, sempre alinhados às melhores práticas do setor.</p>
 
         <h2>Valores</h2>
-        <ul>
-            <li>Profissionalismo</li>
-            <li>Transparência</li>
-            <li>Segurança</li>
-            <li>Inovação</li>
+        <ul style="margin-bottom: 20px;">
+            <li>Profissionalismo</li><br>
+            <li>Transparência</li><br>
+            <li>Segurança</li><br>
+            <li>Inovação</li><br>
         </ul>
 
         <h2>Por que Escolher a Solari Instalações?</h2>
@@ -61,7 +68,12 @@
 </main>
 
     <footer>
-        <p>&copy; 2024 Solari Instalações. Todos os direitos reservados.</p>
+        <div class="footer-text">
+            
+           <img width="150px" src="imagens/logo.png" alt="Logo Solari Instalações">
+            <p style=" text-shadow: 1px 1px 5px rgba(252, 252, 252, 0.329);">  © 2024 Solari Instalações. Todos os
+                direitos reservados.</p>
+        </div>
     </footer>
     <!-- Chamando o arquivo JavaScript -->
     <script src="script.js"></script>

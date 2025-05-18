@@ -11,25 +11,34 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+     <link rel="stylesheet" href="css/reset.css">
 </head>
 <body onresize="mudouTamanho()">
     <header>
-        <div class="logo">
-            <img src="imagens/logo.png" alt="Logo da Solari" />
-            <h1>Solari Instalações</h1>
-        </div>
+        <div class="box">
+        <h1>
+            <img width="150px" src="imagens/logo.png" alt="Logo da Solari" />
+            
+        
+        </h1>
+        
     
    
     <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-    <nav id="itens">          
+
+
+
+    <nav id="menu">          
         <ul>
             <li><a href="index.html">Início</a></li>
-            <li><a href="portfolio.html">Portfólio</a></li>
+           
+            
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="contato.html">Contato</a></li>
         </ul>
    
     </nav>
+    </div>
 </header>
 <main>
     <section class="hero">
@@ -37,28 +46,36 @@
             <h2>Nossos Serviços</h2>
             <p>Especialistas em reformas que valorizam seu imóvel e atendem suas necessidades.</p>
         </div>
+        
     </section>
 
     <section class="servicos">
-        <h2>O que fazemos?</h2>
+       
         <div class="servico-container">
-            <div class="servico-item">
-                <img src="imagens/reforma_residencial.jpg" alt="Reformas Residenciais">
-                <h3>Reformas Residenciais</h3>
-                <p class="servico-descricao">Transforme sua casa com nossos serviços de reforma completa, focando em qualidade e personalização.</p>
-                <a href="servicos.html#residenciais" class="btn">Saiba Mais</a>
+            <div class="servicoo-item">
+                 <h3>
+                    <img src="imagens/projetoDeReformaResidencial.png" alt="Reformas Residenciais" height="150px" width="300px">
+                   Reformas Residenciais
+                </h3>
+                
+                <p class="servicoo-descricao">Transforme sua casa com nossos serviços de reforma completa, focando em qualidade e personalização.</p>
+                
             </div>
-            <div class="servico-item">
-                <img src="imagens/reforma_comercial.jpg" alt="Reformas Comerciais">
-                <h3>Reformas Comerciais</h3>
-                <p class="servico-descricao">Otimize seu espaço de trabalho com nossas reformas especializadas para ambientes comerciais.</p>
-                <a href="servicos.html#comerciais" class="btn">Saiba Mais</a>
+            <div class="servicoo-item">
+                <h3>
+                <img height="150px" width="300px" src="imagens/ReformaComercial.jpg" alt="Reformas Comerciais">
+                Reformas Comerciais
+            </h3>
+                <p class="servicoo-descricao">Otimize seu espaço de trabalho com nossas reformas especializadas para ambientes comerciais.</p>
+                
             </div>
-            <div class="servico-item">
-                <img src="imagens/manutencao_geral.jpg" alt="Manutenção Geral">
-                <h3>Manutenção Geral</h3>
+            <div class="servicoo-item">
+                <h3>
+                <img height="150px" width="300px" src="imagens/manutencao_geral.jpg" alt="Manutenção Geral">
+                Manutenção Geral
+            </h3>
                 <p class="servico-descricao">Oferecemos serviços de manutenção para garantir que seu espaço continue em perfeito estado.</p>
-                <a href="servicos.html#manutencao" class="btn">Saiba Mais</a>
+               
             </div>
         </div>
     </section>
@@ -66,7 +83,12 @@
     
 
     <footer>
-        <p>&copy; 2024 Solari Instalações. Todos os direitos reservados.</p>
+        <div class="footer-text">
+            
+           <img width="150px" src="imagens/logo.png" alt="Logo Solari Instalações">
+            <p style=" text-shadow: 1px 1px 5px rgba(252, 252, 252, 0.329);">  © 2024 Solari Instalações. Todos os
+                direitos reservados.</p>
+        </div>
     </footer>
         <!-- Chamando o arquivo JavaScript -->
         <script src="script.js"></script>

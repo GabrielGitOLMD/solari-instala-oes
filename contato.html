@@ -11,24 +11,34 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+     <link rel="stylesheet" href="css/reset.css">
 </head>
 <body onresize="mudouTamanho()">
 
-    <header>
-        <div class="logo">
-            <img src="imagens/logo.png" alt="Logo da Solari" />
-            <h1>Solari Instalações</h1>
-        </div>
+        <header>
+        <div class="box">
+        <h1>
+            <img width="150px" src="imagens/logo.png" alt="Logo da Solari" />
+            
+        
+        </h1>
+        
     
+   
     <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-    <nav id="itens">
+
+
+
+    <nav id="menu">          
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="portfolio.html">Portfólio</a></li>
             <li><a href="sobre.html">Sobre</a></li>
+            
         </ul>
+   
     </nav>
+    </div>
 </header>
     <main>
         <section class="hero">
@@ -61,7 +71,7 @@
                 <button type="submit">Solicitar Serviço</button>
             </form>
             
-            <div id="mensagem-sucesso" style="display: none; color: green; font-weight: bold;">
+            <div id="mensagem-sucesso" style="display: none; color: #000055b2; font-weight: bold;">
                 Obrigado por entrar em contato! Sua solicitação foi enviada com sucesso.
             </div>
             
@@ -97,7 +107,7 @@
         </section>
         <div class="InfoContato">
             <h2>Informações de Contato</h2>
-            <p><strong>Telefone:</strong> (61) 8234-7904 </p>
+            <p><strong>Telefone:</strong> (61) 8607-6092 </p>
             <p><strong>Email:</strong> Solariinstalacoes19@gmail.com</p>
             <p><strong>Endereço:</strong> Avenida araucárias, Águas claras CEP 12345-678</p>
         </div>
@@ -108,13 +118,18 @@
 
 
     <div class="whatsapp-logo">
-        <a href="https://wa.me/5531999999999" target="_blank">
+        <a href="https://wa.me/5561986076092" target="_blank">
             <img src="imagens/novaLogo.png" alt="WhatsApp">
         </a>
     </div>
 
     <footer>
-        <p>&copy; 2024 Solari Instalações. Todos os direitos reservados.</p>
+        <div class="footer-text">
+            
+           <img width="150px" src="imagens/logo.png" alt="Logo Solari Instalações">
+            <p style=" text-shadow: 1px 1px 5px rgba(252, 252, 252, 0.329);">  © 2024 Solari Instalações. Todos os
+                direitos reservados.</p>
+        </div>
     </footer>
     <!-- Chamando o arquivo JavaScript -->
     <script src="script.js"></script>

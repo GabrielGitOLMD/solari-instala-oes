@@ -14,7 +14,7 @@
 }
 
 /* 
-typical device breakpoints
+typical device breakpoints pesquisa
 --------------------------
 pequenas telas: ate 600px;
 celular de 600px ate 700px;
@@ -27,6 +27,13 @@ grandes telas: acima de 1200px;
     #burguer{
         display: none;
     }
+    .box{
+        width: 800px;
+        margin: 0 auto;
+        position: relative;
+    }
+   
+   
     
     
     
