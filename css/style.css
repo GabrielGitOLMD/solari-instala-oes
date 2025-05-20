@@ -41,11 +41,12 @@ header {
 }
 
 .box{
-    width: 550px;
+    width: 500px;
     margin: 0 auto;
     position: relative;
    
 }
+
 
 nav {
     
@@ -87,9 +88,12 @@ nav a:hover {
 #burguer {
 
     color: white;
-    display: block;
+    display: inline-block;
     
-    text-align: right;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     
     padding: 10px;
     cursor: pointer;
@@ -247,6 +251,7 @@ main p {
     padding: 10px;
     margin: 0px 0px 0px 0px;
     border-radius: 10px 10px 0px 0px;
+    width: 82%;
 
 
 }
@@ -258,6 +263,7 @@ main p {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
+    width: 85%;
 
     padding: 0px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.349);
@@ -285,7 +291,7 @@ main p {
 }
 
 .itdit {
-   
+   font-weight: bolder;
     margin-bottom: 0px;
     font-size:.6em;
     white-space: nowrap;
@@ -304,11 +310,12 @@ main p {
 .fcp{
   
     flex-shrink: 1;
-     height: 100px;
+     height: 80px;
 
        
 }
 .btnit{  
+    font-weight: bold;
     transform: translateY(-9px);
     margin: auto;
     
