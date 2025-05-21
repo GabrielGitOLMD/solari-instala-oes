@@ -40,9 +40,14 @@ grandes telas: acima de 1200px;
     nav{
         display: block;
         text-align: right;
+        right: 50px;
     }
     li{
         display: inline-block;
+
+    }
+    nav a{
+        font-size: 20px;
     }
     main{
         width: 768px;

@@ -34,7 +34,6 @@ function mudouTamanho() {
             }
         }
 
-
 /* formulario */
 
 document.getElementById('servico').addEventListener('change', function () {
