@@ -260,6 +260,14 @@ main p {
    
     
 }
+.servicoo-item h3:hover{
+       transform: translateY(-1px); 
+      color:#A68C5d;
+      border-color: #0d0926;
+     
+    
+}
+
 
 .servicos h2 {
 
