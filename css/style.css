@@ -48,7 +48,9 @@ header {
     height: 150px;
    
 }
-
+.sobre {
+    width: 85%;
+}
 
 
 nav {
@@ -307,6 +309,7 @@ main p {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.24);
     padding: 10px;
     
+    
 }
 
 .itdit {
@@ -396,13 +399,14 @@ main p {
 
 
 /* Contato Section */
+
 .contato h2 {
     text-align: center;
 }
 
 .contato input,
 .contato textarea {
-    width: 100%;
+    width: 85%;
     padding: 0.5rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
@@ -416,6 +420,10 @@ main p {
     padding: 0.7rem 1.5rem;
     cursor: pointer;
     border-radius: 5px;
+    width: 85%;
+}
+#servico{
+    width: 90%;
 }
 
 
