@@ -32,6 +32,9 @@ grandes telas: acima de 1200px;
         margin: 0 auto;
         position: relative;
     }
+    .servicos>div.container.servico-container{
+        width: 81.2%;
+    }
    
    
     
