@@ -108,7 +108,7 @@ nav a:hover {
     padding: 10px; /* Permite que o ícone ocupe apenas o espaço do conteúdo e seja ajustável */
 
     position: absolute; /* Posiciona o ícone em relação ao seu elemento pai */
-    right: 200px; /* Define a posição do ícone no extremo direito */
+    right: 175px; /* Define a posição do ícone no extremo direito */
     top: 50%; /* Define a posição do ícone a 40% do topo do elemento pai */
 
     transform: translateY(-50%); /* Move o ícone 100% para cima em relação à sua posição original */
