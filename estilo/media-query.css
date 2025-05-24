@@ -28,14 +28,53 @@ grandes telas: acima de 1200px;
         display: none;
     }
     .box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         width: 800px;
         margin: 0 auto;
         position: relative;
+        height: 150px;
     }
     .servicos>div.container.servico-container{
         width: 81.2%;
     }
-   
+    
+
+   #menu {
+    background-color: transparent;
+    position: absolute; /* Fixa o menu na tela, garantindo que ele não role junto com a página */
+    top: 0; /* O menu começa no topo da página */
+    height: 100%; /* O menu ocupa toda a altura da tela */
+    
+    right: -250px; /* Define o menu inicialmente fora da tela, oculto à direita */
+    width: 60%; /* Define a largura do menu quando aberto */
+    padding-top: 60px; /* Adiciona um espaçamento no topo para evitar sobreposição */
+     /* Define uma cor de fundo semi-transparente para o menu */
+    transition: right 0.5s ease-in-out; /* Adiciona um efeito suave ao abrir e fechar o menu */
+    z-index: 1000; /* Garante que o menu esteja acima de outros elementos da página */
+}
+
+    
+
+#menu ul {
+    list-style: none; /* Remove os marcadores de lista padrão */
+    padding: 0; /* Remove o espaçamento interno da lista */
+    
+    flex-direction: row; /* Organiza os itens em coluna, um abaixo do outro */
+    align-items: start; /* Alinha os itens à esquerda */
+}
+
+
+
+#menu ul li a {
+    color: white; /* Define a cor do texto dos links como branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    display: block; /* Faz com que os links ocupem toda a largura do item da lista */
+}
+
+
+
    
     
     
@@ -43,9 +82,9 @@ grandes telas: acima de 1200px;
     nav{
         display: block;
         text-align: right;
-        right: 50px;
+        position: relative;
     }
-    li{
+    nav li{
         display: inline-block;
 
     }
@@ -55,4 +94,12 @@ grandes telas: acima de 1200px;
     main{
         width: 768px;
     }
+    
+
+     
+
+
+   
+
+   
 }

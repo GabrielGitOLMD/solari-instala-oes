@@ -36,7 +36,10 @@ html {
 }
 
 header {
-
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 15px;
      background-color: var(--cor5);
 
 }
@@ -99,24 +102,63 @@ nav a:hover {
     color: var(--cor2);
 }
 #burguer {
-
-    color: white;
+    font-size: 30px;
+    color: white; /* Define a cor do texto do ícone como branco */
     display: inline-block;
-    
-    position: absolute;
-    right: 0px;
-    top: 40%;
-    transform: translateY(-50%);
-    transform: translateX(-400%);
-    
-    padding: 10px;
-    cursor: pointer;
+    padding: 10px; /* Permite que o ícone ocupe apenas o espaço do conteúdo e seja ajustável */
+
+    position: absolute; /* Posiciona o ícone em relação ao seu elemento pai */
+    right: 200px; /* Define a posição do ícone no extremo direito */
+    top: 50%; /* Define a posição do ícone a 40% do topo do elemento pai */
+
+    transform: translateY(-50%); /* Move o ícone 100% para cima em relação à sua posição original */
     
 
+    z-index: 1100; /* Garante que o ícone esteja acima de outros elementos */
+  
+    cursor: pointer; /* Transforma o cursor em uma mão ao passar sobre o ícone, indicando que é clicável */
 }
+
 
 #burguer:hover {
     color: var(--cor2);
+}
+#menu {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    
+    right: -250px; /* Menu inicia oculto */
+    width: 200px;
+    padding-top: 100px;
+    background-color: #00010d50;
+    transition: right 0.5s ease-in-out; /* Efeito suave */
+    z-index: 1000;
+    
+}
+#menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#menu ul li {
+    padding: 15px;
+}
+
+#menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px var(--cor5);
+   
+}
+
+#menu ul li a:hover {
+    background-color: #444;
 }
 
 
