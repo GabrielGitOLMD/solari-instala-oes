@@ -322,7 +322,7 @@ main p {
     padding: 10px;
     margin: 0px 0px 0px 0px;
     border-radius: 10px 10px 0px 0px;
-    width: 78.6%;
+    width: 298px;
 
 
 }
@@ -334,7 +334,7 @@ main p {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-    width: 85%;
+    width: 318px;
 
     padding: 0px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.349);
