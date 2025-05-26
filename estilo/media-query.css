@@ -103,3 +103,9 @@ grandes telas: acima de 1200px;
 
    
 }
+@media screen and (orientation: portrait) {
+    #burguer{
+        right: 10%;
+    }
+    
+}
