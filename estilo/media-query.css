@@ -107,5 +107,11 @@ grandes telas: acima de 1200px;
     #burguer{
         right: 10%;
     }
+    .servicos h2{
+        width: 500px;
+    }
+    .servicos>div.container.servico-container {
+        width: 520px;
+    }
     
 }
