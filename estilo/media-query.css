@@ -103,15 +103,3 @@ grandes telas: acima de 1200px;
 
    
 }
-@media screen and (orientation: portrait) {
-    #burguer{
-        right: 10%;
-    }
-    .servicos h2{
-        width: 500px;
-    }
-    .servicos>div.container.servico-container {
-        width: 520px;
-    }
-    
-}
